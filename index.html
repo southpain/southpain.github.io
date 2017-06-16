@@ -1,13 +1,194 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>标题</title>
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+<meta charset="utf-8">
+<title>Index</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style>
+	*{margin: 0;padding: 0;list-style:none;}
+	html{
+		background: #f0e979;
+	}
+	#wrap{
+		width: 600px;
+		height: 400px;
+		margin: 100px auto 0;
+		position: relative;
+	}
+	#main{
+		width: 600px;
+		height: 400px;
+		/* overflow-x: scroll; */
+		overflow: hidden;
+	}
+	#con{
+		width: 4000px;
+		height: 400px;
+		overflow: hidden;
+	}
+	#con img{
+		width: 600px;
+		height: 400px;
+		float: left;
+	}
+	#num{
+		overflow: hidden;
+		position: absolute;
+		left: 230px;
+		bottom: 20px;
+	}
+	#num li{
+		float: left;
+		width: 10px;
+		height: 10px;
+		background: #fff;
+		cursor: pointer;
+		margin-left: 10px;
+		border-radius: 50%/50%;
+	}
+	#num .show{
+		background: #333;
+	}
+	#left{
+		position: absolute;
+		top:0;
+		left: -50px;
+		width: 50px;
+		height: 400px;
+		background: #eee;
+		cursor: pointer;
+		text-align: center;
+		line-height: 400px;
+		color: #c6c6c6;
+		font-size: 55px;
+		font-family: '宋体';
+		font-weight: bold;
+		border-radius: 10px 0 0 10px;
+	}
+	#left:hover{
+		background: #abdaa2;
+		color: #fff;
+	}
+	#right{
+		position: absolute;
+		top:0;
+		right: -50px;
+		width: 50px;
+		height: 400px;
+		background: #eee;
+		cursor: pointer;
+		text-align: center;
+		line-height: 400px;
+		color: #c6c6c6;
+		font-size: 55px;
+		font-family: '宋体';
+		font-weight: bold;
+		border-radius: 0 10px 10px 0;
+	}
+	#right:hover{
+		background: #abdaa2;
+		color: #fff;
+	}
+</style>
 </head>
 <body>
-	<p>asdasdasdasdasd</p>
-	<a href="./index2.html">点击</a>
+	<div id="wrap">
+		<div id="main">
+			<div id="con">
+				<img src="./imgs/1.jpg" alt="">
+				<img src="./imgs/2.jpg" alt="">
+				<img src="./imgs/3.jpg" alt="">
+				<img src="./imgs/4.jpg" alt="">
+				<img src="./imgs/5.jpg" alt="">
+				<img src="./imgs/6.jpg" alt="">
+			</div>
+		</div>
+		<ul id="num">
+			<li class="show"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div id="left">&lt;</div>
+		<div id="right">&gt;</div>
+	</div>
+<script>
+var main=document.getElementById('main'),
+	img1=main.getElementsByTagName('img')[0],
+	num=document.getElementById('num'),
+	lis=num.getElementsByTagName('li'),
+	left=document.getElementById('left'),
+	right=document.getElementById('right');
+	// alert(img1.offsetWidth);
+var a=0;
+var timer,timer2;
+function move(){
+	var start=main.scrollLeft;
+	var end=img1.offsetWidth*a;
+	var change=end-start;
+	var minstep=0;
+	var maxstep=20;
+	var everystep=change/maxstep;
+	clearInterval(timer2);
+	timer2=setInterval(function (){
+		minstep++;
+		if (minstep>=maxstep) {
+			clearInterval(timer2);
+		}
+		start+=everystep;
+		main.scrollLeft=start;
+	},15);
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].className='';
+	}
+	lis[a].className='show';
+}
+function autoMove(){
+	// clearInterval(timer1);
+	timer1=setInterval(function (){//每隔两秒走一张
+		a++;
+		if (a>=lis.length) {
+			a=0;
+		}
+		move();
+		// alert(1)
+	},2000);
+}
+autoMove();//进入页面自动执行
+right.onclick=function (){
+	clearInterval(timer1);
+	a++;
+	if (a>=lis.length) {
+		a=0;
+	}
+	move();
+	autoMove();//控制结束，自动走
+}
+left.onclick=function (){
+	clearInterval(timer1);
+	a--;
+	if (a<0) {
+		a=lis.length-1;
+	}
+	move();
+	autoMove();//控制结束，自动走
+}
+
+for (var i = 0; i < lis.length; i++) {
+	lis[i].onclick=function (){
+		clearInterval(timer1);
+		for (var i = 0; i < lis.length; i++) {
+			if (lis[i]==this) {
+				a=i;
+				move();
+				autoMove();//控制结束，自动走
+			}
+		}
+	}
+}
+</script>
 </body>
 </html>
