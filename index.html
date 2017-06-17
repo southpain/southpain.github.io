@@ -13,7 +13,7 @@
 	#wrap{
 		width: 600px;
 		height: 400px;
-		margin: 100px auto 0;
+		margin: 150px auto 0;
 		position: relative;
 	}
 	#main{
@@ -90,18 +90,27 @@
 		background: #abdaa2;
 		color: #fff;
 	}
+	.rainbow{
+		float: left;
+		width: 300px;
+		height: 150px;
+		margin-top: -100px;
+	}
 </style>
 </head>
 <body>
+<!-- =====内容===== -->
+<img class="rainbow" src="./images/rainbow.png" alt="彩虹云">
+<!-- ====大图滚动==== -->
 	<div id="wrap">
 		<div id="main">
 			<div id="con">
-				<img src="./images/01.JPG" alt="">
-				<img src="./images/02.JPG" alt="">
-				<img src="./images/03.JPG" alt="">
-				<img src="./images/04.JPG" alt="">
-				<img src="./images/05.JPG" alt="">
-				<img src="./images/06.JPG" alt="">
+				<img src="./images/1.jpg" alt="">
+				<img src="./images/2.jpg" alt="">
+				<img src="./images/3.jpg" alt="">
+				<img src="./images/4.jpg" alt="">
+				<img src="./images/5.jpg" alt="">
+				<img src="./images/6.jpg" alt="">
 			</div>
 		</div>
 		<ul id="num">
@@ -115,6 +124,7 @@
 		<div id="left">&lt;</div>
 		<div id="right">&gt;</div>
 	</div>
+
 <script>
 var main=document.getElementById('main'),
 	img1=main.getElementsByTagName('img')[0],
