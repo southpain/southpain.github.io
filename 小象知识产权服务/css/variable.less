@@ -1,0 +1,46 @@
+﻿//公共变量
+@mainColor:#00b7ee;
+@btnColor:#f76d02;
+@btnColor_hover:#eb6100;
+@logoColor:#070707;
+@logoSize:36px;
+@navColor:#1e1e1e;
+@navSize:20px;
+@telSize:30px;
+@focusBtnColor:#f26d7e;   
+@focusBtnColor_hover:#f2395b;  //政策列表关注政策按钮
+@footBoxColor:#fff;
+@footBoxColor_hover:#cfefff; //政策列表底部按钮
+@contentColor:#f6f6f6;//政策列表容器背景
+//公共样式函数
+.center(@top_mottom:0){
+    margin:@top_mottom auto;
+}
+.txtCenter(@index:center){
+    text-align:@index;
+}
+.theBorder(@width:1px,@style:solid,@color:#959595){
+    border:@width @style @color;
+}
+.ellipsis(@num:2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @num;
+    -webkit-box-orient: vertical;
+}
+.btnRadius(@radius:5px){
+    border-radius:@radius;
+}
+.lineCenter(@height:50px){
+    height:@height;
+    line-height:@height;
+}
+.inline_block(){
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+.innerPageBg(@color:#f3f3f3){ //内页背景色
+    background-color:@color;
+   }

@@ -1,0 +1,610 @@
+﻿/*列表页*/
+.sciencePage {
+  background-color: #f3f3f3;
+}
+.scienceContent {
+  background-color: #fff;
+  padding: 12px 15px 273px 15px;
+  margin-top: 1px;
+  overflow: hidden;
+}
+.scienceContent.detailContent {
+  padding: 7px 10px 0 15px;
+}
+.scienceContent.detailContent .listBox {
+  padding: 5px 15px;
+  margin-top: 17px;
+  margin-bottom: 22px;
+}
+.scienceContent.detailContent .listBox .tablistBox {
+  margin-bottom: 9px;
+}
+.scienceContent.detailContent .listBox .tablistBox table {
+  width: 710px;
+}
+.scienceContent.detailContent .listBox .tablistBox table tr > td {
+  padding-top: 12px;
+}
+.scienceContent.detailContent .listBox .tablistBox table span {
+  font-size: 30px;
+  padding-left: 8px;
+}
+.scienceContent .searchContent {
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+  border: 1px solid #959595;
+}
+.scienceContent .searchContent .inputBox {
+  height: 50px;
+  line-height: 50px;
+  width: 1015px;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+.scienceContent .searchContent .inputBox input {
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #959595;
+  border-radius: 5px;
+  color: #3e3e3e;
+  font-size: 18px;
+  width: 842px;
+  text-indent: 26px;
+  float: left;
+}
+.scienceContent .searchContent .inputBox input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #3e3e3e;
+}
+.scienceContent .searchContent .inputBox input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #3e3e3e;
+}
+.scienceContent .searchContent .inputBox input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #3e3e3e;
+}
+.scienceContent .searchContent .inputBox input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #3e3e3e;
+}
+.scienceContent .searchContent .inputBox .btn {
+  float: right;
+  width: 143px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f76d02;
+  border-radius: 5px;
+}
+.scienceContent .searchContent .inputBox .btn:hover {
+  background-color: #eb6100;
+}
+.scienceContent .searchContent .hotSearch {
+  width: 1015px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.scienceContent .searchContent .hotSearch .title {
+  float: left;
+  color: #3e3e3e;
+  width: 95px;
+  text-align: right;
+}
+.scienceContent .searchContent .hotSearch .hotWord {
+  float: right;
+  width: 920px;
+}
+.scienceContent .searchContent .hotSearch .hotWord a {
+  color: #f76d02;
+  margin-left: 37px;
+}
+.scienceContent .searchContent .hotSearch .hotWord a:hover {
+  text-decoration: underline!important;
+}
+.tableContent {
+  margin-top: 12px;
+}
+.tableContent table {
+  width: 100%;
+}
+.tableContent table td {
+  border: 1px solid #959595;
+}
+.tableContent table td.first {
+  width: 142px;
+  text-indent: 15px;
+  font-size: 16px;
+  color: #222;
+}
+.tableContent table td.last {
+  width: 1060px;
+}
+.tableContent table td.last > a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding-left: 8px;
+  padding-right: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  color: #222;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-left: 9px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.tableContent table td.last > a:hover {
+  color: #00b7ee;
+}
+.tableContent table td.last > a.on {
+  color: #00b7ee;
+  border: 1px solid #959595;
+}
+.tableContent table td.last > a span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background: url(../images/tableCloseIco.png) no-repeat center;
+  position: absolute;
+  top: 50%;
+  margin-top: -5.5px;
+  right: 6px;
+  display: none;
+  cursor: pointer;
+}
+.tableContent table td.last > ul {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 26px;
+  font-size: 16px;
+  margin: 4px 4px 5px 18px;
+}
+.tableContent table td.last > ul > li {
+  height: 24px;
+  position: relative;
+  border: 1px solid #959595;
+}
+.tableContent table td.last > ul > li > a {
+  display: block;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 34px;
+  color: #222;
+  background: url(../images/tableSelectIco.png) no-repeat right center #ffffff;
+}
+.tableContent table td.last > ul > li .subSelect {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  z-index: 20;
+  left: -1px;
+  top: 25px;
+  border: 1px solid #959595;
+  border-top: none;
+  display: none;
+}
+.tableContent table td.last > ul > li .subSelect a {
+  display: block;
+  width: 100%;
+  line-height: 24px;
+  text-indent: 5px;
+}
+.tableContent table td.last > ul > li .subSelect a:hover {
+  background-color: #eeeeee;
+}
+.tableContent table td.month a {
+  margin-right: 12px;
+}
+.tableContent table td.sale a {
+  margin-right: 12px;
+}
+.tableContent table td.type a {
+  margin-right: 32px;
+}
+.tableContent table td.dept a {
+  margin-right: 29px;
+}
+.tableContent table td.field a {
+  margin-right: 69px;
+}
+.listBox {
+  padding: 6px 24px;
+  margin-top: 17px;
+  padding-bottom: 0;
+  border: 2px solid #b5b5b5;
+}
+.listBox .titleBox {
+  position: relative;
+  border-bottom: 5px solid #dcdcdc;
+  height: 80px;
+  line-height: 80px;
+}
+.listBox .titleBox span {
+  float: left;
+}
+.listBox .titleBox .title {
+  color: #00b7ee;
+  font-size: 36px;
+}
+.listBox .titleBox .time {
+  font-size: 20px;
+  color: #3e3e3e;
+  margin-left: 17px;
+}
+.listBox .titleBox .time a {
+  color: #f76d02;
+}
+.listBox .titleBox .focus {
+  display: block;
+  width: 158px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: url(../images/heartIco.png) no-repeat 9px center #f26d7e;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-indent: 55px;
+  right: 0;
+  border-radius: 5px;
+}
+.listBox .titleBox .focus:hover {
+  background-color: #f2395b;
+}
+.listBox .titleBox .focusBtn {
+  margin-top: 22px;
+}
+.listBox .tablistBox {
+  overflow: hidden;
+  margin-bottom: 7px;
+}
+.listBox .tablistBox table {
+  width: 644px;
+  float: left;
+  margin-top: 10px;
+}
+.listBox .tablistBox table tr > td {
+  padding-top: 13px;
+  padding-bottom: 14px;
+}
+.listBox .tablistBox table tr > td:first-child {
+  width: 55px;
+}
+.listBox .tablistBox table tr > td span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 24px;
+  color: #3e3e3e;
+  padding-left: 11px;
+}
+.listBox .tablistBox .imgBox {
+  width: 460px;
+  height: 266px;
+  float: right;
+  padding: 16px;
+  overflow: hidden;
+  margin-top: 22px;
+  border: 1px dashed #959595;
+}
+.listBox .tablistBox .imgBox .fleft {
+  width: 287px;
+}
+.listBox .tablistBox .imgBox .fright {
+  margin-left: 24px;
+}
+.listBox .tablistBox .imgBox .fright .title {
+  font-size: 26px;
+  color: #3e3e3e;
+  line-height: 34px;
+}
+.listBox .tablistBox .imgBox .fright .txt {
+  font-size: 18px;
+  width: 144px;
+  color: #3e3e3e;
+  margin-top: 10px;
+}
+.listBox .tablistBox .imgBox.detailImgBox {
+  width: 376px;
+  height: 235px;
+  text-align: center;
+  border: 1px solid #959595;
+  padding: 13px 9px;
+  margin-top: 21px;
+}
+.listBox .footBox {
+  height: 79px;
+  background-color: #f6f6f6;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.listBox .footBox table {
+  width: 100%;
+  height: 100%;
+}
+.listBox .footBox table td {
+  text-align: center;
+  width: 20%;
+}
+.listBox .footBox table td a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 139px;
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #959595;
+  border-radius: 5px;
+  text-align: left;
+  text-indent: 49px;
+  font-size: 20px;
+  color: #272727;
+  background-color: #ffffff;
+}
+.listBox .footBox table td a.ico1 {
+  background: url(../images/scienceFootIco1.png) no-repeat 10px center;
+}
+.listBox .footBox table td a.ico2 {
+  background: url(../images/scienceFootIco2.png) no-repeat 10px center;
+  text-indent: 54px;
+}
+.listBox .footBox table td a.ico3 {
+  background: url(../images/scienceFootIco3.png) no-repeat 10px center;
+}
+.listBox .footBox table td a.ico4 {
+  background: url(../images/scienceFootIco4.png) no-repeat 10px center;
+}
+.listBox .footBox table td a.ico5 {
+  background: url(../images/scienceFootIco5.png) no-repeat 10px center;
+}
+.listBox .footBox table td a:hover {
+  background-color: #cfefff;
+}
+/*详情页*/
+.scienceContent.detailContent .listBox.left30 {
+  padding: 0 30px 22px;
+}
+.scienceContent.detailContent .listBox.detailWay {
+  color: #3e3e3e;
+}
+.scienceContent.detailContent .listBox.detailWay .titleBox .title {
+  color: #3e3e3e;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox {
+  border: 2px #e5e5e5 dashed;
+  margin: 23px 0 34px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox .apply {
+  display: block;
+  padding-bottom: 2px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox .apply table tr:hover {
+  background-color: #eeeeee;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox .apply table tr:first-child td span {
+  font-size: 24px;
+  line-height: 45px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox .apply table tr td span {
+  font-size: 24px;
+  line-height: 45px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table {
+  width: 100% !important;
+  padding-top: 5px;
+  margin-top: 0;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr:first-child td {
+  border-top: 0;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr:first-child td span {
+  font-size: 36px;
+  padding-left: 75px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr > td {
+  border-top: 2px #e5e5e5 dashed;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr > td span {
+  padding-left: 75px;
+  font-size: 36px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr > td:first-child {
+  width: 103px;
+  padding-left: 25px;
+  padding-top: 23px;
+}
+.scienceContent.detailContent .listBox.detailWay .tablistBox table tr > td:first-child p {
+  font-size: 24px;
+  text-align: center;
+  color: #3e3e3e;
+  line-height: 30px;
+  margin-top: 9px;
+}
+.scienceContent.detailContent .listBox.detailWay .question .cont {
+  padding-bottom: 6px;
+}
+.scienceContent.detailContent .listBox.detailWay .question .cont .item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 36px;
+  border-top: 1px #535353 solid;
+}
+.scienceContent.detailContent .listBox.detailWay .question .cont .item:first-child {
+  border-top: 0;
+  padding-top: 17px;
+}
+.scienceContent.detailContent .listBox.detailWay .question .cont .item .title:hover {
+  color: #00b7ee;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .titleBox .time {
+  font-size: 22px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .tablistBox tr > td:first-child {
+  padding-left: 12px;
+  width: auto;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem:first-child {
+  margin-bottom: 26px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .flow .first {
+  color: #00b7ee;
+  font-size: 31px;
+  margin-top: -33px;
+  padding-left: 10px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .flow .first p {
+  margin-top: 60px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .flow .middle {
+  padding: 16px 28px 2px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .flow .last {
+  color: #3e3e3e;
+  font-size: 26px;
+  margin-top: -30px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .flow .last p {
+  margin-top: 64px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .down {
+  padding-top: 30px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .down dl {
+  border: 1px #535353 dashed;
+  border-radius: 10px;
+  padding-top: 26px;
+  padding-right: 76px;
+  width: 453px;
+  margin: 0 14px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .down dl dt {
+  padding-left: 43px;
+  text-align: center;
+  font-size: 26px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .down dl dd a {
+  display: block;
+  background-color: #eb6100;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 19px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .down dl dd a:hover {
+  background-color: #ff8712;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message {
+  font-size: 26px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message textarea {
+  width: 1157px;
+  height: 273px;
+  padding: 5px;
+  border: 1px #959595 solid;
+  border-radius: 5px;
+  margin: 20px 0 37px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table {
+  width: 100%;
+  margin: 32px 0 41px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table td {
+  position: relative;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table td label {
+  position: absolute;
+  top: 78px;
+  left: 0;
+  color: #f00;
+  font-size: 24px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table .text {
+  padding-left: 5px;
+  width: 735px;
+  height: 75px;
+  line-height: 75px;
+  border: 1px #959595 solid;
+  border-radius: 5px;
+  font-size: 26px;
+  margin-left: 13px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table .submit {
+  height: 75px;
+  line-height: 75px;
+  background-color: #eb6100;
+  width: 201px;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  border: 0;
+  font-size: 26px;
+  border-radius: 5px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .newItem .message table .submit:hover {
+  background-color: #ff8712;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox {
+  border: 0;
+  margin: 0;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr:hover {
+  background: none;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr > td {
+  border-top: 0;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td {
+  width: 50%;
+  padding-left: 20px;
+  padding-top: 23px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td:first-child {
+  padding-right: 50px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl {
+  padding-bottom: 16px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dt {
+  background: url('../images/scienceDetailIco13.png') no-repeat left center;
+  width: 103px;
+  height: 103px;
+  text-align: center;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dt span {
+  padding-left: 0;
+  font-size: 30px;
+  padding-top: 47px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dd {
+  position: relative;
+  height: 103px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dd p {
+  margin-top: 16px;
+  font-size: 30px;
+  line-height: 30px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dd .more {
+  position: absolute;
+  bottom: 4px;
+  left: 23px;
+  color: #00b7ee;
+  font-size: 24px;
+}
+.scienceContent.detailContent .listBox.detailWay.noBorder .tablistBox tr td dl dd .more:hover {
+  text-decoration: underline !important;
+}
+/*# sourceMappingURL=sciencePolicy.css.map */

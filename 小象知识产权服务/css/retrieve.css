@@ -1,0 +1,39 @@
+.position .positionBox{ color: #00b7ee }
+.position .retrievePassword{ font-size:36px; margin-top:17px;}
+.step{ width: 1142px; height: 129px; margin:49px auto 0; }
+.step1{background: url(../images/retrieve1.png) no-repeat; }
+.step2{background: url(../images/retrieve2.png) no-repeat; }
+.step3{background: url(../images/retrieve3.png) no-repeat; }
+/*step1*/
+.retrieveWarp{ margin: 92px auto 0; width: 742px;  }
+.retrieveWarp .inputRetrieve input{color: #c1c1c1;  height: 36px; padding:14.5px 30px 14.5px 94px;border-radius: 5px; font-size: 36px; border: 1px solid #959595;}
+.retrieveWarp .emailRetrieve input{width: 616px;background: url(../images/icon_email.png) no-repeat 20px center; }
+.retrieveWarp .sureBtn{margin-top:53px ; margin-bottom: 80px;}
+.retrieveWarp .sureBtn input{width: 742px; height: 75px;color:#FFF; font-size:36px;border-radius: 5px; background-color:#eb6100;border: none;  }
+.retrieveWarp .sureBtn input:hover{background-color: #FF8712;}
+/*step2*/
+.retrieveWarp .retrieveInfo{ color:#494949; font-size: 36px; margin:0 0 45px 34px; }
+.retrieveWarp .retrieveInfo a{ color: #ff5400; }
+.retrieveWarp .seccodeRetrieve input{width: 680px;padding:26.5px 30px 26.5px 30px;}
+/*step3*/
+.retrieveWarp .passwordRetrieve{    margin-bottom: 53px;}
+.retrieveWarp .passwordRetrieve input{width: 680px;padding:26.5px 30px 26.5px 30px;}
+/*step4*/
+.retrieveSuccess dl{ text-align: center; }
+.retrieveSuccess dd{ font-size: 36px; color: #424242; margin-top:50px; }
+.retrieveSuccess .sureBtn a{ text-align:center;line-height: 75px; display:block;width: 742px; height: 75px;color:#FFF; font-size:36px;border-radius: 5px; background-color:#eb6100;border: none;  }
+.retrieveSuccess .sureBtn a:hover{background-color: #FF8712;}
+.retrieveSuccess{ margin-top:156px; margin-bottom:200px;}
+
+/**/
+.errorBox{ position:absolute; color: red; }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+﻿@import "variable.less";
+
+/*登录*/
+.loginContent{
+    overflow:hidden;
+    margin-bottom: 200px;
+    .loginBox{
+        float:left;
+        width:742px;
+        margin-left:56px;
+        position:relative;
+        li{
+            height:105px;
+            border-bottom:1px solid #bfbfbf;
+            line-height:105px;
+            margin-top: 34px;
+            &.userName{
+                background:url(../images/loginIco1.png) no-repeat left center;
+            }
+             &.password{
+                background:url(../images/loginIco2.png) no-repeat left center;
+            }
+            input{
+                border:none;
+                font-size:36px;
+                color:#c1c1c1;
+                height:105px;
+                margin-left:72px;
+                outline:none;
+                width:670px;
+            }
+        }
+        .submit{
+            display:block;
+            outline:none;
+            height:75px;
+            width:100%;
+            border:none;
+            background-color:@btnColor_hover;
+            color:#fff;
+            font-size:26px;
+            letter-spacing:2px;
+            border-radius:5px;
+            margin-top:62px;
+            margin-bottom:52px;
+            &:hover{
+                 opacity:0.8;
+                 filter:alpha(opacity=80);
+            }
+        }
+        .txt{
+            font-size:36px;
+            color:#3d3d3d;
+            text-align:right;
+            a{
+                color:@mainColor;
+                &:hover{
+                    text-decoration:underline!important;
+                }
+            }
+        }
+        .errorBox{
+            position:absolute;
+            height:40px;
+            line-height:40px;
+            font-size:18px;
+            color:#ff0000;
+            left:20px;
+            bottom:186px;
+            overflow:hidden;
+            label{
+                display:block;
+            }
+        }
+    }
+    .otherLogin{
+        float:right;
+        margin-top: 25px;
+        margin-right: 8px;
+        .title{
+            font-size:36px;
+            color:#3d3d3d;
+            margin-bottom:41px;
+            line-height: 47px;
+        }
+        a{
+            display:block;
+            width:312px;
+            height:60px;
+            line-height:60px;
+            border-radius:5px;
+            color:#fff;
+            font-size:24px;
+            margin-bottom:60px;
+            &.sina{
+                background:url(../images/sinaIco.png) no-repeat 38px center #ff3f4a;
+                text-indent:137px;
+                &:hover{
+                    opacity:0.8;
+                    filter:alpha(opacity=80);
+                }
+            }
+            &.qq{
+                background:url(../images/qqIco.png) no-repeat 41px center #0ea2ff;
+                text-indent:116px;
+               &:hover{
+                    opacity:0.8;
+                    filter:alpha(opacity=80);
+                }
+            }
+        }
+    }
+}
+/*注册*/
+.registContent{
+    .checkBox{
+        font-size:30px;
+        color:#616161;
+        height:40px;
+        line-height:40px;
+        margin-top:56px;
+        a{
+          color:#616161;
+          &:hover{
+              text-decoration:underline!important;
+          }
+        }
+        .input_style{
+            position:relative;
+            float:left;
+            width:40px;
+            height:40px;
+            margin-left:10px;
+            margin-right:16px;
+            input{
+                position:absolute;
+                width:40px;
+                height:40px;
+                left:0;
+                top:0;
+            }
+        }
+    }
+    /*.errorBox {
+        bottom: 180px!important;
+    }*/
+    li.email{
+        background:url(../images/loginIco3.png) no-repeat left center;
+    }
+}

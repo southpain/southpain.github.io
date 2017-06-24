@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+.foot{ position:inherit;}
+.memberManageWarp .manageSwitch{ width:300px; border:1px solid #959595;}
+.memberManageWarp .manageSwitch ul li:nth-child(1){ background:url(../images/zt-zc.png) no-repeat 18px 13px;}
+.memberManageWarp .manageSwitch ul li:nth-child(2){ background:url(../images/zt-zlgl.png) no-repeat 18px 13px;}
+.memberManageWarp .manageSwitch ul li:nth-child(3){ background:url(../images/zt-zlnfgl.png) no-repeat 18px 13px;}
+.memberManageWarp .manageSwitch ul li:nth-child(4){ background:url(../images/zt-zhgl.png) no-repeat 18px 13px;}
+.memberManageWarp .manageSwitch ul li.on{ background-color:#e5e5e5;}
+.memberManageWarp .manageSwitch li a{font-size:20px; color:#3e3e3e;font-family:Arial,"Hiragino Sans GB","Microsoft Yahei", "微软雅黑";
+padding:17.5px 0 17.5px 73px; display:block; border-bottom:1px solid #959595;} 
+.main.memberManageWarp{ padding-bottom:0;}
+
+.memberManageWarp .manageDetail{ width:883px;}
+.memberManageWarp .manageDetail .manageDetailInvent{ border:1px solid #959595; overflow:hidden; padding-bottom:13px; margin-bottom:12px;}
+.memberManageWarp .manageDetail .manageDetailBill{ border:1px solid #959595; overflow:hidden;margin-bottom: 10px; }
+.memberManageWarp .manageDetailFl{ float:left;}
+.memberManageWarp .manageDetailFr{ float:right; width:754px;}
+.memberManageWarp .manageDetailFl p{ width:94px; height:51px; border-radius:25.5px; background:#00b7ee; font-size:25px; color:#fff; text-align:center; line-height:50px; margin-left:19px; margin-top:31px;}
+.memberManageWarp .manageDetailFr h2{font-size:30px; color:#161616;font-family:Arial,"Hiragino Sans GB","Microsoft Yahei", "微软雅黑"; font-weight:100; margin-top:21px; margin-bottom:6px;}
+.memberManageWarp .manageDetailFr span{font-size:18px; color:#3e3e3e;font-family:Arial,"Hiragino Sans GB","Microsoft Yahei", "微软雅黑"; margin-right:33px;}
+.memberManageWarp .manageDetailBill a{ width:147px; height:35px; background-color:#eb6100; border-radius:6px; display:block; text-align:center; line-height:34px; font-size:18px; color:#fff; margin:12px 0 11px 15px;}
+.memberManageWarp .manageDetailTable tr th{font-size:14px; color:#fff; font-weight:100;}
+.memberManageWarp .manageDetailTable tr .th1{width: 17.5%;}
+.memberManageWarp .manageDetailTable tr .th2{ width: 25%; padding: 0 4%;}
+.memberManageWarp .manageDetailTable tr .th3{ width: 37.5%; padding: 0 3%;}
+.memberManageWarp .manageDetailTable tr .th4{ padding-right: 5.3%;}
+.memberManageWarp .manageDetailTable tr td:nth-child(4){ padding-right: 5.3%;}
+.memberManageWarp .manageDetailTable tr td{ text-align:center;border-top: 1px solid #959595; color:#414141; font-size:14px;}
+.zmemberManageWarp .manageDetailTable tr td a{padding-left:20px;background:url(../images/zt-Delete.png) no-repeat 0px 1px;color:#00b7ee;}
+.memberManageWarp .manageDetailTable tr:nth-child(2n+1){ background-color:#f4f4f4;}
+.memberManageWarp .manageDetailTable table{ width:100%;border: 1px solid #959595;/*border-top:none;*/}
+.memberManageWarp .manageDetailTable table tr{height:36px;}
+.memberManageWarp .manageDetailTable table tr:nth-child(1){ background-color:#00b7ee; height:34px;}
+.h36{ width:100%; height:36px; background-color:#fff; overflow:hidden;}
+
+/*弹窗*/
+.deleteCapacityWarp{  height:100%; position:fixed; top:0; width:100%;background: url(../images/opcity.png) repeat;}
+.deleteCapacityWarptwo{display:none;}
+.deleteCapacityWarpone{ display:none; height:100%; position:fixed; top:0; width:100%;background: url(../images/opcity.png) repeat;}
+.deleteCapacityWarp .deleteCapacity{ position:fixed; left:50%; top:50%; background-color:#fff; width:544px; height:337px; border:1px solid #7e7e7e; border-radius:8px; margin-left:-272px; margin-top:-168.5px;}
+.deleteCapacityWarp .deleteCapacity .delete{color:#fff; height:58px; background-color:#00b7ee; border-top-left-radius:8px;border-top-right-radius:8px; }
+.deleteCapacityWarp .deleteCapacity .delete h2{font-weight:100; line-height:60px; font-size:24px;margin-left:33px;}
+.deleteCapacityWarp .deleteCapacity>p{ padding-top:98px; text-align:center; font-size:24px; color:#444; background:url(../images/zt-gou.png) no-repeat 243px 27px;}
+.deleteCapacityWarp .deleteCapacity .deleteone{ width:372px; margin:19px auto; margin-bottom:21px;}
+.deleteCapacityWarp .deleteCapacity .deleteone a{ font-size:24px; color:#fff; text-align:center; width:150px; height:45px; display:inline-table; background-color:#00b7ee; border-radius:5px; line-height:42px;}
+.deleteCapacityWarp .deleteCapacity .deleteone Dele{ float:left;}
+.deleteCapacityWarp .deleteCapacity .Cancel{ float:right;}
+.deleteCapacityWarp .deleteCapacity span{ display:block; text-align:center; color:#4A4A4A;}
+.deleteCapacityWarp .deleteCapacity{ position:relative;}
+.deleteCapacityWarp .deleteCapacity>a{ position:absolute; right:13px; top:8px;}
+
+/*弹窗删除成功*/
+.deleteCapacityWarpone .deleteCapacity{ position:fixed; left:50%; top:50%; background-color:#fff; width:544px; height:337px; border:1px solid #7e7e7e; border-radius:8px; margin-left:-272px; margin-top:-168.5px;}
+.deleteCapacityWarpone .deleteCapacity .delete{color:#fff; height:58px; background-color:#00b7ee; border-top-left-radius:8px;border-top-right-radius:8px; }
+.deleteCapacityWarpone .deleteCapacity .delete h2{font-weight:100; line-height:60px; font-size:24px;margin-left:33px;}
+.deleteCapacityWarpone .deleteCapacity p{ padding-top:98px; text-align:center; font-size:24px; color:#444; background:url(../images/zt-gou.png) no-repeat 243px 27px;}
+.deleteCapacityWarpone .deleteCapacity .deleteone{ width:372px; margin:19px auto; margin-bottom:21px;}
+.deleteCapacityWarpone .deleteCapacity .deleteone a{ font-size:24px; color:#fff; text-align:center; width:150px; height:45px; display:inline-table; background-color:#00b7ee; border-radius:5px; line-height:42px;margin:0 auto;display:block;}
+.deleteCapacityWarpone .deleteCapacity .confirm{}
+.deleteCapacityWarpone .deleteCapacity span{ display:block; text-align:center; color:#4A4A4A;}
+.deleteCapacityWarpone .deleteCapacity{ position:relative;}
+.deleteCapacityWarpone .deleteCapacity>a{ position:absolute; right:13px; top:8px;}
+/*弹窗删除成功*/
+
+/*添加清单*/
+.addBill{ display:none;}
+.addBill .deleteCapacity{ position:fixed; left:50%; top:50%; background-color:#fff; width:544px; height:406px; border:1px solid #7e7e7e; border-radius:8px; margin-left:-272px; margin-top:-203px;}
+.selectYers{ padding:28px 30px 0 32px; }
+.selectYers span{ float:left;}
+.selectYers .yearsSelect { float:right; width: 370px; height: 53px; line-height: 48px; border: 1px solid #aaaaaa; background: url(../images/zt-xsj.png) 313px center no-repeat; border-radius: 7px;}
+.selectYers .yearsSelect > li > a {
+    display: block;
+    font-size: 30px;
+    color: #1e1e1e;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.selectYers .yearsSelect .subSelectUl {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+    background-color: #fff;
+    z-index: 200;
+	top:4px;
+}
+.selectYers .yearsSelect .subSelectUl > li > a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.addBill .selectYers span{ font-size:24px; color:#292929; margin-top:7px;}
+.addBill .addInput{ padding:28px 30px 0 32px; height:125px;}
+.addBill .addInput span{ float:left; font-size:24px; color:#292929; margin-top:49px;}
+.addBill .addInput input{ float:right;padding: 13px 0px 14px 21px;width: 347px;margin-top: 26px; border-radius: 6px;border: 1px solid #aaaaaa;}
+.add>a{ float:left;}
+.add{ overflow:hidden;padding:0 30px 0 34px;}
+.add .fr{ float:right; width:395px;}
+.addBill .deleteCapacity .add .fr span {    display: initial; font-size:18px; color:#000;}
+.addBill .deleteCapacity .add .fr a{ padding-left:20px; background:url(../images/zt-x.png) no-repeat 0 5px; color:#ff0000;margin-left:7px;}
+.addBill .deleteCapacity .add .fr p{ margin:1px 0 6px;}
+.addBill .deleteCapacity .deleteone a{ height:55px; line-height:54px; width:182px;  font-size: 24px;  color: #fff; text-align: center;border: 0;padding: 0;}
+.addBill .deleteCapacity .deleteone .Dele{    height: 55px;border-radius: 5px; background-color: #00b7ee; line-height: 54px; width: 182px;font-size: 24px; color: #fff;text-align: center; border: 0; padding: 0;}
+.addBill .deleteCapacity .deleteone{ width:424px;}
+.addBillone .deleteCapacity .deleteone a {  margin: 0 auto;  display: block;}
+.addBillone{ display:none;}
+
+
+
+
+
+/*专利年费管理*/
+.memberManageWarpFee .manageWarp .fr .manageDetailInvent dl dt{width:154px; height:154px; background:url(../images/zt-y.png) no-repeat; color:#eb6100; font-size:30px; text-align:center; line-height:150px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailInvent dl dd{ text-align:center; font-size:20px; color:#3e3e3e;margin-top:10px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailInvent dl{ float:left;margin: 13px 69px 0px 70px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailInvent dl:nth-child(3){ margin-right:0;}
+.memberManageWarpFee .manageDetail .manageDetailInvent{ padding-bottom:15px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill span:nth-child(1){ font-size:18px; color:#3e3e3e; margin-left: 24px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill span:nth-child(2){ font-size:18px; color:#eb6100; margin-left: 8px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill span{ float:left;margin-top: 18px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill .feeFr{ float:right;margin-right: 18px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill .feeFr .feeAdd{ float:left; width:112px; margin-right: 11px;}
+.memberManageWarpFee .manageWarp .fr .manageDetailBill .feeFr .feeRemind{ float:right;}
+.memberManageWarpFee .manageDetailTable tr th{ padding:0 !important;}
+.memberManageWarpFee .manageDetailTable tr td{ padding:0 !important;}
+.memberManageWarpFee .manageDetailTable tr .th1{ width:43px;   /* padding: 0 1.7% 0 2.2%;*/}
+.memberManageWarpFee .manageDetailTable tr .th2{ width:67px; }
+.memberManageWarpFee .manageDetailTable tr .th3{ width:147px; padding:0 !important;}
+.memberManageWarpFee .manageDetailTable tr .th4{ width:162px;}
+.memberManageWarpFee .manageDetailTable tr .th5{ width:83px;}
+.memberManageWarpFee .manageDetailTable tr .th6{ width:99px;}
+.memberManageWarpFee .manageDetailTable tr .th7{ width:99px;}
+.memberManageWarpFee .manageDetailTable tr .th8{ width:69px;}
+.memberManageWarpFee .manageDetailTable tr .th9{ width: 87px;  padding-left: 23px !important;}
+.memberManageWarpFee .manageDetailTable tr td:nth-child(9){padding-left: 23px !important;}
+.memberManageWarpFee table a.input_style input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.memberManageWarpFee table a.input_style {
+    float: right;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.memberManageWarpFee .manageDetailTable tr td a{ padding:0;}
+.memberManageWarpFee .manageDetailTable span{ font-size:14px; color:#414141;    margin-left: 9px; margin-top: 15px; display: block;}
+
+
+.memberManageWarpFee .pageList { margin-top: 18px; }
+.memberManageWarpFee .feeCancel{ float:left; width:112px; height:35px; display:block; background-color:#eb6100; font-size:18px; color:#fff;border-radius: 6px; text-align:center; line-height:34px; margin-top: 20px;  margin-left: 5px;}
+.memberManageWarpFee .pageList tbody{ float:right;}
+.memberManageWarpFee .pageList .go .btn { font-size:15px;    width: 49px;    height: 36px;    line-height:0 !important;}
+.memberManageWarpFee .pageList .go span input.page { width: 32px; height: 33px;line-height: 34px;}
+.memberManageWarpFee .pageList .go span {    font-size: 15px;}
+.memberManageWarpFee .pageList .pageListContent .prev, .memberManageWarpFee .pageList .pageListContent .next {
+    width: 60px;    color: #9c9c9c;    font-size: 15px;    height: 36px;	    line-height: 37px}
+.memberManageWarpFee .pageList .pageListContent a, .memberManageWarpFee .pageList .pageListContent span {    width: 37px;    height: 36px;	font-size: 17px;line-height: 37px}
+.memberManageWarpFee .pageList .go { height: 38px; line-height: 38px;}
+.memberManageWarpFee .manageDetail div{ overflow:hidden;}
+
+.memberManageWarpFee .manageDetail .feeSpecific{border: 1px solid #959595 ; margin-top:21px; background-color:#eeeeee;padding-bottom: 6px;}
+.memberManageWarpFee .manageDetail .feeSpecific p{ font-size:26.5px; color:#414141; padding:24px 0 24px 84px; background:url(../images/zt-wh.png) no-repeat 12px 16px; float:left;}
+.memberManageWarpFee .manageDetail .feeSpecific a{ float:right; height:35px; background:#eb6100; color:#fff; text-align:center; font-size:18px; line-height:34px;border-radius:5px;margin-top: 26px;}
+.memberManageWarpFee .manageDetail .feeSpecific .feeApply{ width:112px;}
+.memberManageWarpFee .manageDetail .feeSpecific .feeknow{ width:140px;margin-right: 28px;margin-left: 23px;}
+.feeEdit .deleteCapacity .deleteone .Dele{    height: 55px;border-radius: 5px; background-color: #00b7ee; line-height: 54px; width: 182px;font-size: 24px; color: #fff;text-align: center; border: 0; padding: 0;}
+
+/*年费提醒*/
+.feeYear .feeInput li{ margin-top: 22px; position: relative;}
+.feeYear .feeInput li span{ float:left; font-size:24px; color:#292929; margin-top:10px}
+.feeYear .feeInput li input{ float:right;    width: 319px; padding:15px 0 14px 21px; border-radius: 6px;border: 1px solid #aaaaaa;}
+.feeYear .feeInput{ width:472px; margin-left:auto; margin-right:auto;    padding-top: 5px;}
+.feeYear .deleteCapacity { height: 490px; margin-top: -245px;}
+.feeYear .feeInput li .modify,.feeYear .feeInput li a{ width:182px; height:55px; display:block; float:left; border-radius:5px; background-color:#00b7ee; text-align:center;  line-height:54px; color:#fff; font-size:24px;}
+.feeYear .feeInput li .modify{border: 0;padding: 0; cursor: pointer;}
+.feeYear .feeInput .feeA{margin-top:34px;}
+.feeYear .feeInput .modify{    margin-left: 24px;    margin-right: 58px;}
+.feeYearNone{ display:none;}
+/*年费提醒*/
+
+/*你已修改提醒方式*/
+.xiugaicg .deleteCapacity p{ margin-top:14px;}
+.xiugaicg .deleteCapacity .deleteone .confirm{ height: 55px; line-height: 54px;}
+.xiugaicg .deleteCapacity .deleteone {  margin-top: 40px;}
+/*你已修改提醒方式*/
+
+
+/*请提供联系方式*/
+.feeContact .feeInput>p{ font-size:24px; color:#292929;    margin-top: 17px;}
+.feeContact .feeInput ul{ padding-top:4px;}
+.feeContact .feeInput li {      margin-top: 25px;}
+.feeContact .feeInput .feeA {    margin-top: 27px;}
+.feeContact .deleteCapacity {    height: 468px;    margin-top: -234px;}
+.feeContact{ display:none;}
+
+
+/*提示信息*/
+.feeTsxx .deleteCapacity span{ font-size:24px; color:#444;padding-bottom: 6px;}
+.feeTsxx .deleteCapacity p{ color:#292929;}
+.feeTsxx .deleteCapacity p {    padding-top: 93px;    padding-bottom: 14px;}
+.feeTsxx .deleteCapacity .deleteone a {    height: 55px;    line-height: 54px;}
+
+/*专利取消*/
+.feeZlqx .confirm{ float:left;}
+.feeZlqx .confirmR{ float:right;}
+.feeZlqx .deleteCapacity p {background: url(../images/zt-gou.png) no-repeat 243px 39px;   padding-top: 112px;}
+.feeZlqx .deleteCapacity .deleteone {  margin-top: 40px;}
+.feeZlqx .deleteCapacity .deleteone a {    height: 55px;    line-height: 52px;}
+
+
+.feeZlqxqr .deleteCapacity span { font-size:24px; color:#444;padding-bottom: 6px;padding-top: 5px;}
+.feeZlqxqr .deleteCapacity p {  padding-top: 100px;}
+.feeZlqxqr .confirm{ float:left;}
+.feeZlqxqr .confirmR{ float:right;}
+.feeZlqxqr .deleteCapacity .deleteone {    margin-top: 13px;}
+.feeZlqxqr .deleteCapacity .deleteone a {    height: 55px;    line-height: 52px;}
+
+
+
+/*详情*/
+.manageFeeDetail .manageDetailTable tr th{ padding:0 !important;}
+.manageFeeDetail .manageDetailTable tr td{ padding:0 !important;}
+.manageFeeDetail .manageDetailTable tr .th1{ width:33px;   /* padding: 0 1.7% 0 2.2%;*/}
+.manageFeeDetail .manageDetailTable tr .th2{ width:209px; }
+.manageFeeDetail .manageDetailTable tr .th3{ width:155px; padding:0 !important;}
+.manageFeeDetail .manageDetailTable tr .th4{ width: 73px;  padding-left: 91px !important;}
+.manageFeeDetail .manageDetailTable tr .th5{ width: 80px;  padding-left: 40px !important;}
+.manageFeeDetail .manageDetailTable tr .th6{ width:84px;}
+.manageFeeDetail .manageDetailTable tr .th7{ width:79px;}
+.manageFeeDetail .manageDetailTable tr td:nth-child(5){padding-left: 40px !important;}
+.manageFeeDetail .manageDetailTable tr td:nth-child(4){padding-left: 89px !important;}
+.manageFeeDetail table a.input_style input {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.manageFeeDetail table a.input_style {
+    float: right;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.manageFeeDetail .manageDetailTable tr td a{ padding:0;}
+.manageFeeDetail .manageDetailTable span{ font-size:14px; color:#414141;    margin-left: 9px; margin-top: 15px; display: block;}
+.manageFeeDetail .manageDetailTable tr td a{ background:none;}
+.manageFeeDetail .manageDetail .manageDetailInvent {    margin-bottom: 8px;}
+
+
+
+/*费用编辑*/
+.feeEdit{ display:none;}
+.feeEdit .deleteCapacity{ position:fixed; left:50%; top:50%; background-color:#fff; width:544px; height:478px; border:1px solid #7e7e7e; border-radius:8px; margin-left:-272px; margin-top:-239px;}
+.feeEdit .selectYers{ padding:0 30px 0 32px; margin-top:-1px;}
+.selectYers span{ float:left;}
+.selectYers .yearsSelect { float:right; width: 370px; height: 53px; line-height: 48px; border: 1px solid #aaaaaa; background: url(../images/zt-xsj.png) 313px center no-repeat; border-radius: 7px;}
+.selectYers .yearsSelect > li > a {
+    display: block;
+    font-size: 30px;
+    color: #1e1e1e;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.selectYers .yearsSelect .subSelectUl {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+    background-color: #fff;
+    z-index: 200;
+	top:4px;
+}
+.selectYers .yearsSelect .subSelectUl > li > a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.feeEdit .selectYers span{ font-size:24px; color:#292929; margin-top:7px;}
+.feeEdit .addInput{ padding:24px 30px 0 32px; height:55px;}
+.feeEdit .addInput span{ float:left; font-size:24px; color:#292929;line-height: 55px; }
+.feeEdit .addInput input{ float:right;padding: 14px 0px 15px 21px;width: 347px; border-radius: 6px;border: 1px solid #aaaaaa;}
+.add>a{ float:left;}
+.add{ overflow:hidden;padding:0 30px 0 34px;}
+.add .fr{ float:right; width:395px;}
+.feeEdit .deleteCapacity .add .fr span {    display: initial; font-size:18px; color:#000;}
+.feeEdit .deleteCapacity .add .fr a{ padding-left:20px; background:url(../images/zt-x.png) no-repeat 0 5px; color:#ff0000;margin-left:7px;}
+.feeEdit .deleteCapacity .add .fr p{ margin:1px 0 6px;}
+.feeEdit .deleteCapacity .deleteone a{ height:55px; line-height:54px; width:182px;}
+.feeEdit .deleteCapacity .deleteone{ width:424px;    margin-top: 103px;}
+.addBillone .deleteCapacity .deleteone a {  margin: 0 auto;  display: block;}
+.addBillone{ display:none;}
+.feeEdit .addInput{ height:auto;}
+.feeEdit .addInput li{ position: relative; margin-bottom:23px;}
+
+
+/*修改失败*/
+.addFail{ display:none;}
+.addFail .deleteCapacity .deleteone a {    margin: 0 auto;    display: block;}
+.addFail .deleteCapacity>p {    background: url(../images/zt_sb.png) no-repeat 243px 32px;padding-top: 116px;}
+.addFail .deleteCapacity .deleteone { margin-top: 39px;}
+.addFail .deleteCapacity .deleteone a {    height: 55px;line-height: 54px;}
+
+
+
+/*修改成功*/
+.addSuccess{ display:none;}
+.addSuccess .deleteCapacity .deleteone a {    margin: 0 auto;    display: block;}
+.addSuccess .deleteCapacity>p {    background: url(../images/zt-gou.png) no-repeat 243px 32px;padding-top: 116px;}
+.addSuccess .deleteCapacity .deleteone { margin-top: 39px;}
+.addSuccess .deleteCapacity .deleteone a {    height: 55px;line-height: 54px;}
+
+.feeshenqin .deleteCapacity {    height: 406px;    margin-top: -203px;}
+.feeshenqin{ display:none;}
+
+.xiazaicg .deleteCapacity p { padding-top: 112px;    background: url(../images/zt-gou.png) no-repeat 243px 40px;}
+/*.deleteCapacityWarpone .deleteCapacity .deleteone {  margin-top: 40px;}*/
+.deleteCapacityWarpone .deleteCapacity .deleteone a { height: 55px;  line-height: 54px;}
+
+
+.errorBox{ color: red;  margin-left: 134px;    position: absolute;    margin-top: 53px;}
+.addBill .addInput .errorBox{ margin-left: 113px;  margin-top: 104px;}
+.feeEdit .addInput .errorBox{ margin-left: 113px; }

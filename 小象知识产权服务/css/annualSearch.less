@@ -1,0 +1,137 @@
+﻿@import "variable.less";
+
+.table_td(){
+     font-size:14px;
+     border-top:1px solid #959595;
+}
+
+.annualPage{
+    .innerPageBg();
+    .pageList{
+        margin-top:16px;
+    }
+ }
+.annualContent{
+    background-color: #fff;
+    padding: 12px 15px 273px 15px;
+    margin-top: 1px;
+    overflow:hidden;
+    .searchContent{
+    padding-bottom:20px;
+    background-color:@contentColor;
+    .theBorder();
+    .inputBox{
+        .lineCenter();
+        width:1015px;
+        .center();
+        margin-top:21px;
+        input{
+            .lineCenter(48px);
+            .theBorder();
+            .btnRadius();
+            color:#3e3e3e;
+            font-size:18px;
+            width:842px;
+            text-indent:26px;
+            &::-webkit-input-placeholder { /* WebKit browsers */ 
+            color: #3e3e3e; 
+            } 
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+            color: #3e3e3e; 
+            } 
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+            color: #3e3e3e; 
+            } 
+            &:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+            color: #3e3e3e; 
+            } 
+        }
+        .btn{
+            float:right;
+            width:143px;
+            .lineCenter();
+            font-size:18px;
+            text-align:center;
+            color:#fff;
+            background-color:@btnColor;
+            .btnRadius();
+            &:hover{
+                background-color:@btnColor_hover;
+            }
+            }
+        }
+}
+}
+
+ .an_tableContent{
+        margin-top:15px;
+        .theBorder();
+        table{
+            width:100%;
+             a.input_style{
+                float:right;
+                 width:20px;
+                 height:20px;
+                 position:relative;
+                 input{
+                     width:20px;
+                     height:20px;
+                     position:absolute;
+                     left:0;
+                     top:0;
+                 }
+             }
+        }
+        th{
+            font-weight:normal;
+            color:#fff;
+            background-color:@mainColor;
+            height:33px;
+           .table_td();
+           border-top:none;
+           width:14%;
+           &.th1{
+             width:4%;
+           }
+           &.th2{
+             width:6%;
+           }
+           &.th3,
+           &.th4{
+             width:17%;
+           }
+        }
+        td{
+            height:35px;
+            color:#414141;
+            text-align:center;
+             .table_td();
+             &.on{
+                 background-color:#eee;
+             }
+        }
+
+    }
+
+ .an_btnContent{
+    .lineCenter(35px);
+    margin-top:13px;
+    .btn{
+        float:left;
+        width:112px;
+        background-color:@btnColor;
+        color:#fff;
+        text-align:center;
+        margin-left:14px;
+        margin-right:32px;
+        .btnRadius();
+        &:hover{
+            background-color:@btnColor_hover;
+        }
+    }
+    span{
+        font-size:14px;
+        color:#414141;
+    }
+  }
+

@@ -1,0 +1,95 @@
+.policyManageWarp .policy{ width:881px; border:1px solid #959595; overflow: hidden;}
+.policyManageWarp .policy dl dt{width:154px; height:154px; background:url(../images/zt-y.png) no-repeat; color:#eb6100; font-size:30px; text-align:center; line-height:150px;}
+.policyManageWarp .policy dl dd{ text-align:center; font-size:20px; color:#3e3e3e;margin-top:10px;}
+.policyManageWarp .policy dl{ float:left;margin: 13px 69px 15px 70px;}
+.policyManageWarp .policy dl:nth-child(3){ margin-right:0;}
+
+.policyManageWarp .manageBill label{ font-size:18px; color:#3e3e3e; margin-left: 24px; line-height:60px;}
+.policyManageWarp .manageBill label span{ color:#eb6100; margin-left: 8px;}
+.policyManageWarp .manageBill .feeFr{ float:right;margin-right: 18px;}
+.policyManageWarp .manageBill .feeFr .feeAdd{ float:left; width:112px; margin-right: 11px;}
+.policyManageWarp .manageBill .feeFr .feeRemind{ float:right;}
+.policyManageWarp .manageBill { border:1px solid #959595; overflow:hidden;margin:12px 0; }
+.policyManageWarp .manageBill a{ width:147px; height:35px; background-color:#eb6100; border-radius:6px; display:block; text-align:center; line-height:34px; font-size:18px; color:#fff; margin:12px 0 11px 15px;}
+
+.an_tableContent {
+  margin-top: 15px;
+  border: 1px solid #959595;
+  width: 881px;
+}
+.an_tableContent table {
+  width: 100%;
+}
+.an_tableContent table a.input_style {
+  float: right;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.an_tableContent table a.input_style input {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.an_tableContent th {
+  font-weight: normal;
+  color: #fff;
+  background-color: #00b7ee;
+  height: 33px;
+  font-size: 14px;
+  border-top: 1px solid #959595;
+  border-top: none;
+  width: 14%;
+}
+.an_tableContent th.th1 {
+  width: 4%;
+}
+.an_tableContent th.th2 {
+  width: 6%;
+}
+.an_tableContent th.th3,
+.an_tableContent th.th4 {
+  width: 17%;
+}
+.an_tableContent th.th5 {
+  width: 20%;
+}
+
+.an_tableContent td {
+  height: 35px;
+  color: #414141;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #959595;
+}
+.an_tableContent td a{color: #f76d02}
+.an_tableContent td.on {
+  background-color: #eee;
+}
+.an_btnContent {
+  height: 35px;
+  line-height: 35px;
+  margin-top: 13px;
+}
+.an_btnContent .btn {
+  float: left;
+  width: 112px;
+  background-color: #f76d02;
+  color: #fff;
+  text-align: center;
+  margin-left: 14px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+.an_btnContent .btn:hover {
+  background-color: #eb6100;
+}
+.an_btnContent span {
+  font-size: 14px;
+  color: #414141;
+
+}
+
+

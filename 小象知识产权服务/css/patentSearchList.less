@@ -1,0 +1,353 @@
+﻿@import "variable.less";
+
+/*多选按钮样式*/
+.checkArea{
+    .checkItem{
+        display:block;
+        position:relative;
+        float:left;
+        cursor:pointer;
+        height:26px;
+        line-height:26px;
+        margin-right:41px;
+        background-repeat:no-repeat;
+        .input_style{
+            float:left;
+            width:27px;
+            height:26px;
+            position:relative;
+            margin-right:22px;
+             background-image:url(../images/choiceIcon.png);
+             &.active{
+            background-image:url(../images/choiceIconActive.png);
+           }
+        }
+        input[type="checkbox"]{
+            position:absolute;
+            left:0;
+            top:0;
+            width:27px;
+            height:27px;
+        }
+       
+    }
+}
+
+.PatentPage{
+    .innerPageBg();
+    .PatentContent{
+         padding: 12px 15px 50px 15px;
+         margin-top: 1px;
+         overflow: hidden;
+         background-color: #fff;
+    }
+    .pageList{
+        margin-top:11px;
+    }
+}
+.patentSearchForm{
+    padding-top:18px;
+    >.fleft{
+        width:892px;
+        .inputText{
+            margin-left:19px;
+            width:792px;
+            height:48px;
+            padding:0 25px;
+            border:#959595 solid 1px;
+            border-radius:4px;
+            font-size:18px;
+            color:#3e3e3e;
+        }
+        .inputType{
+            margin-left:19px;
+            margin-top:29px;
+        }
+        
+    }
+    >.fright{
+        float:left!important;
+        .inputSubmit{
+            width:143px;
+            height:50px;
+            border:none;
+            border-radius:4px;
+            background-color:@btnColor;
+            color:#fff;
+            font-size:18px;
+            &:hover{
+                background-color:@btnColor_hover;
+            }
+        }
+    }
+}
+.patentSearchResult{
+    border-bottom:#7d7d7d solid 1px;
+    margin-top:33px;
+    line-height:46px;
+    color:#3e3e3e;
+    span{
+        color:#ff0000;
+    }
+    .fleft {
+    margin-left: 7px;
+   }
+    .fright {
+    margin-right: 5px;
+   }
+}
+.patentSearchAll{
+    margin:21px 0 18px 0;
+    .checkItem{
+        margin-right: 37px;
+        .input_style{
+            margin-right:10px;
+        }
+    }
+}
+
+.patentSearchItem{
+  margin-bottom:14px;
+}
+.patentSearchItemHead{
+    .theBorder();
+    background:#eeeeee;
+    padding:16px 9px 9px 9px;
+    .typeIcon{
+        height:51px;
+        background:#88cb5a url(../images/patentTypeBjL.png) no-repeat left;
+        margin-top:9px;
+        span{
+            display:block;
+            height:100%;
+            padding:0 30px;
+            background:url(../images/patentTypeBjr.png) no-repeat right;
+            font-size:25px;
+            line-height:49px;
+            color:#fff;
+        }
+    }
+    .typeIcon1{
+        background-color:#88cb5a;
+        
+    }
+    .typeIcon2{
+        background-color:#00b7ee;
+    }
+    .typeIcon3{
+        background-color:#efb935;
+    }
+    .typeIcon4{
+        background-color:#68a4dc;
+    }
+    .name{
+        margin-left:12px;
+        width:780px;
+        h2{
+            font-size:30px;
+            font-weight:normal; 
+            line-height:36px;
+        }
+        a{
+            display:block;
+            font-size:30px;
+            font-weight:normal; 
+            line-height:36px;
+            &:hover{
+                color:@mainColor;
+            }
+        }
+        p{
+            font-size:19px;
+            color:#909090;
+            line-height:100%;
+            margin:6px 0;
+        }
+    }
+    .cancel{
+        .off{
+            display:block;
+            width:112px;
+            height:35px;
+            background:@btnColor;
+            color:#fff;
+            border-radius:4px;
+            text-align:center;
+            line-height:35px;
+            &:hover{
+                background-color:@btnColor_hover;
+            }
+        }
+    }
+    .option{
+        width:199px;
+        .editIcon,
+        .downIcon{
+            margin-right: 26px;
+            a{
+                display:block;
+                width:36px;
+                height:29px;
+                line-height:29px;
+                padding-left:40px;
+                background:url(../images/iconEdit.png) no-repeat;
+                text-align:right;
+            }
+        }
+        .downIcon{
+            margin-right:9px;
+            a{
+            background:url(../images/iconDownload.png) no-repeat left center;
+            }
+        }
+        .checkArea{
+            margin-top:2px;
+            label{
+            margin-right:8px;
+              .input_style{
+                  margin-right: 12px;
+              }
+            }
+        }
+    }
+}
+.patentSearchItemMain{
+    padding-top:23px;
+    padding-bottom:16px;
+    .theBorder();
+    border-top:none;
+    .txt{
+        height:144px;
+        overflow:hidden;
+        .ellipsis(3);
+    }
+}
+.patentSearchItemPic{
+    display:block;
+    width:266px;
+    img{
+        float:left;
+        margin-left:10px;
+    }
+}
+.patentSearchItemInfo{
+    margin-top:-7px;
+    width:903px;
+    line-height:48px;
+    >ul{
+        li{
+        float:left;
+        width:420px;
+        }
+    }
+    .toMore{
+        color:#ff5a00;
+        margin-left:30px;
+        &:hover{
+            text-decoration:underline!important;
+        }
+    }
+}
+.patentSearchPage{
+    padding-right:18px;
+}
+.patentSearchPageBox{
+    text-align:right;
+    font-size:15px;
+    a{
+        display:block;
+        height:35px;
+        line-height:35px;
+        border:#959595 solid 1px;
+        text-align:center;
+        color:#3e3e3e;
+    }
+}
+.patentSearchPageTurn{
+    a{
+        width:61px;
+        margin:0 6px;
+        color:#9c9c9c;
+    }
+}
+.patentSearchPageNum{
+    li{
+        float:left;
+        margin:0 6px;
+        font-size:17px;
+        a{
+            width:35px;
+            &.active{
+                background:#f76d02;
+                color:#fff;
+                border-color:#f76d02;
+            }
+        }
+        &.ellip{
+            margin:0;
+            a{
+                margin:0;
+                border:none;
+                line-height:27px;
+            }
+        }
+    }
+}
+.patentSearchPageInfo{
+    line-height:37px;
+    margin-right:5px;
+}
+.patentSearchPageGoto{
+    line-height:37px;
+    input[type="text"]{
+        height:35px;
+        width:35px;
+        border:#959595 solid 1px;
+        font-size:16px;
+        text-align:center;
+    }
+}
+.patentSearchPageEnter{
+    margin-left:5px;
+    .EnterBtn{
+        width:47px;
+        background:#eee;
+    }
+}
+
+/******专利搜索详情页******/
+.patentSearchList.detailDiv{
+    margin-top:69px;
+    padding-bottom:0;
+    .patentSearchItemHead{
+        .name{
+            width:676px;
+        }
+        .option{
+            .editIcon{
+                margin-right:26px;
+            }
+        }
+    }
+}
+.patentsearchDetail{
+    border:#9b9b9b solid;
+    border-width:0 1px 1px 0;
+    font-size:18px;
+    line-height:23px;
+    color:#161616;
+    th,
+    td{
+         border:#9b9b9b solid;
+         border-width:1px 0 0 1px;
+    }
+    th{
+        width:186px;
+        text-align:left;
+        font-weight:normal;
+        text-indent:29px;
+    }
+    td{
+        padding:11px 18px 11px 20px;
+    }
+}

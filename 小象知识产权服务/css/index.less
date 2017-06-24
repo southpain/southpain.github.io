@@ -1,0 +1,278 @@
+﻿
+@import "variable.less";
+
+.slidesjsArr(){
+        display:block;
+        width:60px;
+        height:87px;
+        position:absolute;
+        top:50%;
+        margin-top:-43.5px;
+        z-index:20;
+        font-size:0;
+    }
+/*banner*/
+.slideBanner{
+    height:463px;
+    position:relative;
+    a{
+        display:block;
+        height:100%;
+    }
+   
+    .slidesjs-previous{
+        .slidesjsArr();
+        background:url(../images/bannerPrev.png) no-repeat center;
+        left:5px;
+        &:hover{
+             background:url(../images/bannerPrevOn.png) no-repeat center;
+        }
+    }
+     .slidesjs-next{
+         .slidesjsArr();
+        background:url(../images/bannerNext.png) no-repeat center;
+        right:5px;
+        &:hover{
+             background:url(../images/bannerNextOn.png) no-repeat center;
+        }
+    }
+    .slidesjs-pagination{
+        position:absolute;
+        height:20px;
+        bottom:16px;
+        z-index:20;
+        font-size:0;
+        left:50%;
+        .slidesjs-pagination-item{
+            float:left;
+            margin:0 7px;
+            a{
+                display:block;
+                width:69px;
+                height:20px;
+                background-color:#fff;
+                &.active{
+                   background-color:@mainColor;
+                }
+            }
+        }
+    }
+}
+/*企业免税*/
+.taxContent{
+    background-color:#fff;
+    margin-top:64px;
+    >ul{
+        overflow:hidden;
+       >li{
+        float:left;
+        width:370px;
+        margin-right:61px;
+        padding-bottom:50px;
+        .txtCenter();
+        &:last-child{
+            margin-right:0;
+        }
+        &.last{
+           margin-right:0;
+        }
+        .icoBox{
+            img{
+                display:block;
+                .center();
+            } 
+            .title{
+                font-size:34px;
+                color:#292929;
+                .txtCenter();
+            }
+            .txt{
+                display:block;
+                font-size:20px;
+                color:#919191;
+                .txtCenter();
+                margin-top:4px;
+            }
+        }
+        .imgBox{
+            display:block;
+            .theBorder();
+            .txtCenter();
+            padding-top:11px;
+            padding-bottom:11px;
+            border-radius:5px;
+            margin-top:32px;
+            margin-bottom:3px;
+        }
+        .imgTitle{
+            display:block;
+            font-size:24px;
+            color:#3e3e3e;
+            line-height:44px;
+            height:88px;
+            overflow:hidden;
+            padding:0 22px;
+            .ellipsis();
+            .txtCenter(left);
+            margin-bottom:10px;
+        }
+        .more{
+            font-size:28px;
+            color:@btnColor;
+            &:hover{
+              text-decoration:underline!important;
+              color:@btnColor_hover;
+            }
+        }
+     }
+    }
+   
+}
+/*专利年费查询*/
+.patentContent{
+    background-color:#c9eaff;
+    height:422px;
+    .title{
+        font-size:40px;
+        color:#000;
+        text-align:center;
+        max-width:80%;
+        .center();
+        padding-top: 35px;
+        padding-bottom:25px;
+    }
+    .txt{
+        color:#000;
+        text-align:center;
+         max-width:80%;
+        font-size:22px;
+        .center();
+    }
+    .inputBox{
+        width:792px;
+        height:50px;
+        .center();
+        margin-top:70px;
+        margin-bottom:42px;
+        &:hover{
+            input{
+                box-shadow: 0 0 8px rgba(247, 109, 2, 1);
+                 &::-webkit-input-placeholder { /* WebKit browsers */ 
+                 color: #252525; 
+                 } 
+                &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+                color: #252525; 
+                } 
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+                color: #252525; 
+                } 
+                &:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+                color: #252525; 
+                } 
+            }
+            a{
+                box-shadow: 0 0 8px rgba(247, 109, 2, 1);
+                background-color:#f74c00;
+            }
+        }
+        input{
+            float:left;
+            width:646px;
+            height:48px;
+            .theBorder(1px,solid,@btnColor);
+            line-height:48px;
+             border-top-left-radius:5px;
+            border-bottom-left-radius:5px;
+            font-size:20px;
+            color:#b4b4b4;
+            text-indent:10px;
+            outline:none;
+            color: #252525;
+         
+             &::-webkit-input-placeholder { /* WebKit browsers */ 
+             color: #b4b4b4; 
+            } 
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+            color: #b4b4b4; 
+            } 
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+            color: #b4b4b4; 
+            } 
+            &:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+            color: #b4b4b4; 
+            } 
+           
+        }
+        a{  
+            float:left;
+            width:144px;
+            background-color:@btnColor;
+            height:50px;
+            line-height:50px;
+            color:#fff;
+            font-size:20px;
+            text-align:center;
+            border-top-right-radius:5px;
+            border-bottom-right-radius:5px;
+        }
+    }
+    .see{
+        display:block;
+        font-size:28px;
+        height:29px;
+        line-height:29px;
+        color:#000;
+        text-align:right;
+        width:294px;
+        background:url(../images/wenhaoIco1.png) no-repeat left center;
+        .center();
+        padding-bottom:4px;
+        position:relative;
+    }
+}
+/*查询专利*/
+.checkContent{
+    background-color:#fff;
+    height: 388px;
+    .title{
+        color:#009ef8;
+        padding-top: 60px;
+        padding-bottom: 18px;
+    }
+    .txt{
+        color:#7d7d7d;
+    }
+     .see{
+        color:#009ef8;
+        background:url(../images/wenhaoIco2.png) no-repeat left center;
+         position:relative;
+    }
+    .inputBox {
+    margin-top: 41px;
+    margin-bottom: 33px;
+}
+}
+/*帮助提示*/
+.searchHelp{
+    display:none;
+    position:absolute;
+    z-index:52;
+    color:#333;
+    left:50%;
+    top:49px;
+    width:355px;
+    height:150px;
+    background-color:#fff;
+    border:5px solid #eeeeee;
+    margin-left:-182px;
+    text-align:left;
+    img{
+          position:absolute;
+          left:50%;
+          top:-23px;
+          margin-left:-25px;
+
+    }
+
+}
+

@@ -1,0 +1,35 @@
+.memberInfo{ width: 799px;padding:0 42px; border:1px solid #959595; }
+.infoWarp label{ font-size: 16px; color: #333; }
+.infoWarp span{font-size: 16px; color: #333;}
+.infoWarp{margin-top: 41px;}
+.infoWarp .fl div{margin-bottom: 14px;}
+.infoWarp .fr div{margin-bottom: 14px;}
+.memberInfo .amendBtn{margin: 12px 0 24px 0;width: 112px; height: 35px;line-height: 35px; border:0;text-align: center; background-color: #eb6100; border-radius: 5px;display: block;color: #FFF; cursor: pointer;}
+.memberInfo .amendBtn:hover{background-color:#FF8712;}
+
+.loginWay{width: 799px;padding:30.5px  42px; border:1px solid #959595; margin:13px 0; }
+.loginWayWarp{ font-size: 16px; }
+.loginWayWarp .fr label{vertical-align: middle;padding-left: 12px;}
+.loginWayWarp .fr span{vertical-align: middle;padding-left: 28px;}
+
+/*账户管理修改*/
+.username{margin-bottom: 15px;}
+.amendWarp .infoWarp label{ width:58px;display: inline-block;*display:inline;*zoom:1;}
+.amendWarp .infoWarp input{width: 280px; color: #333; border-radius: 5px;border: 1px solid #959595;height: 20px; line-height:20px; padding:14px 19px;}
+.amendWarp .infoWarp span{padding-left: 19px;}
+.amendWarp .infoWarp .sex{    height: 50px;}
+.amendWarp .infoWarp .sex label{ height:50px;line-height: 50px;}
+.amendWarp .infoWarp .sex input{width: 18px; padding: 0;}
+.amendWarp .infoWarp .sexWarp {width: 280px;display: inline-block;*display:inline;*zoom:1;}
+.amendWarp .infoWarp .sexWarp label{position: relative;cursor: pointer;}
+.amendWarp .infoWarp .sexWarp input{position: absolute;top:16px;cursor: pointer;}
+.amendWarp .infoWarp .sexWarp span{padding-left: 24px;}
+.infoWarp .fl>div{margin-bottom: 34px; position: relative;}
+.infoWarp .fr>div{margin-bottom: 34px; position: relative;}
+.amendWarp .username{height: 50px; line-height: 50px;}
+.amendWarp{padding-bottom: 70px;}
+.amendWarp .amendBtn{width: 202px; height: 50px;margin:27px 0 39px 57px;}
+
+/**/
+.amendWarp .infoWarp .errorBox label{ width: initial; color: red; position: absolute; margin-left:58px; }
+.amendWarp .infoWarp .sex .errorBox label{ top: 35px; }
