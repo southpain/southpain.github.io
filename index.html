@@ -1,129 +1,45 @@
-<!DOCTYPE html>  
-<html lang="zh-cn">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>首页</title>  
-</head>  
-<style>
-    body{  
-    margin: 0;  
-    padding:0;  
-    font: normal 12px/12px "Microsoft YaHei";  
-    background: url(./images/fireworks.jpg) center center no-repeat;
-}
-body{
-         background-size: 1366px 1200px;
-     } 
-.header-wrapper .nav-list li{  
-         float: left;  
-     }
-ul,li{  
-    padding: 0;  
-    margin: 0;  
-    list-style: none;  
-}  
-.header-wrapper .nav-list{  
-    /* background-color: #3c3f41;  */
-}  
-.header-wrapper .nav-list li a{  
-    display: block;  
-    color: #fff;  
-    text-decoration: none;
-}
-.header-wrapper .nav-list li{
-    width: 200px;
-    height: 200px;
-    border: #dc954f 2px solid;
-    opacity: 0.8;
-    font-size: 50px;
-    line-height: 200px;
-    text-align: center;
-    transform: rotate(45deg);
-    box-sizing: border-box;
-}
-.header-wrapper .nav-list li:hover{
-    /* opacity: 1; */
-    font-size: 60px;
-    /* border: none; */
-}
-.header-wrapper .nav-list li:nth-child(1){
-    margin-top: 222px;
-    margin-left: 50px;
-}
-.header-wrapper .nav-list li:nth-child(2){
-    margin-top: 370px;
-    margin-left: -53px;
-}
-.header-wrapper .nav-list li:nth-child(3){
-    margin-top: 73px;
-    margin-left: -203px;
-}
-.header-wrapper .nav-list li:nth-child(4){
-    margin-top: 222px;
-    margin-left: -53px;
-    font-size: 60px;
-    border: none;
-}
-.header-wrapper .nav-list li a{
-    transform: rotate(-45deg);
-}
-.header-wrapper .nav-list li .active{
-    color:#fefdeb;
-    font-size: 70px;
-    font-weight: bold;
-    border: none;
-}
-/* 媒体查询，宽屏  
- @media screen and (min-width: 620px) { 
-     body{
-         background-size: 1366px 1200px;
-     } 
-     .header-wrapper .nav-list li{  
-         float: left;  
-     }
- }    
- 媒体查询，窄屏  
- @media screen and (max-width: 620px) {  
- 对展开列表定位、设置背景颜色  
-     body{
-         background-size: 440px 640px;
-     } 
- .header-wrapper .nav-list li{  
-         float: left;  
-     }
- 列表第一个元素除外列表上边距为1.2px  
- .header-wrapper .nav-list li:not(:first-child){  
-     margin-top: 1.2px;  
-   }   
- }  */ 
-</style>
-<body>  
-<div id="main-container">  
-    <div class="header-wrapper">   
-        <div class="nav-collapse">  
-            <ul class="nav-list">  
-                <li><a href="#">工作</a></li>  
-                <li><a href="./Self-introduction.html">简介</a></li>
-                <li><a href="./小象知识产权服务/html/index/lndex.html">项目</a></li>
-                <li><a href="#" class="active">首页</a></li>  
-            </ul>  
-        </div>  
-    </div>  
-</div>  
-<script src="./js/jquery.js"></script>  
-    <script>  
-        var btnMore;  
-        $(function () {  
-            btnMore = $("#btnMore");  
-            $(btnMore).click(function () {//按钮点击事件  
-                $(".nav-collapse").toggle("slow", "linear");//菜单显示和隐藏之间切换  
-            });  
-        }); 
-        var cw=document.documentElement.clientWidth,
-            ch=document.documentElement.clientHeight ;
-            // alert(cw);
-            // alert(ch);
-    </script>
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/text.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="javascript:">首页</a>
+        <p>southpain1.1</p>
+    </header>
+    <div id="weap">
+        <ul id="left">
+            <li>
+                <p class="title">个人简介<span class="fa fa-black-tie "></span></p>
+                <div class="bottom"></div>
+            </li>
+            <div class="extend">
+                <a href="./Self-introduction.html"><p>简历<span class="fa fa-chevron-right"></span></p></a>
+                <p>附录二<span class="fa fa-chevron-right"></span></p>
+            </div>
+            <li>
+                <p class="title">工作项目<span class="fa fa-gear fa-lg"></span></p>
+                <div class="bottom"></div>
+            </li>
+            <div class="extend">
+                <a href="./小象知识产权服务/html/index/lndex.html"><p>项目一<span class="fa fa-chevron-right"></span></p></a>
+                <p>项目二<span class="fa fa-chevron-right"></span></p>
+            </div>
+            <li>
+                <p class="title">职业规划<span class="fa fa-desktop"></span></p>
+                <div class="bottom"></div>
+            </li>
+            <div class="extend">
+                <p>附录一<span class="fa fa-chevron-right"></span></p>
+                <p>附录二<span class="fa fa-chevron-right"></span></p>
+            </div>
+        </ul>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/text.js"></script>
+</body>
+</html>

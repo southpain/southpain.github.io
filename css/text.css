@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*==================Reset_start===================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family: "微软雅黑","宋体",Arail,Tabhoma; font-size: 14px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+/*根据项目需要，自行添加或删减重置内容*/
+/*==================Reset_End====================*/
+body{
+    background: url(./../images/street.jpg) center center no-repeat;
+    background-size:100% 1700px;
+}
+header{
+    width:1000px;
+    height:50px;
+    margin: 0 auto;
+}
+header p{
+    float: right;
+    font-size:28px;
+    color: #fff;
+    opacity:0.5;
+}
+header a{
+    opacity:0.5;
+    font-size: 38px;
+    color: #f5f5f5;
+}
+header a:hover{
+    opacity:0.8;
+}
+#weap{
+    width:1000px;
+    margin:0 auto;
+}
+#left{
+    width:300px;
+    height:500px;
+    /*background: #eee;*/
+    float: left;
+    margin-top:10px;
+}
+#left li{
+    width: 300px;
+    height:50px;
+    font-size:28px;
+    margin-top:5px;
+    /*background: #ccc;*/
+    position: relative;
+    cursor: pointer;
+    opacity:0.5;
+}
+#left li p{
+    position: absolute;
+    letter-spacing: 5px;
+    left:84px;
+    top:7px;
+    color: #f3f3f3;
+    transition: all 0.2s ease-in;
+}
+#left li p span{
+    margin-top:5px;
+    float: right;
+    margin-left:40px;
+}
+#left li:hover{
+    opacity:1;
+    /*background: #bce8f1;*/
+}
+#left li:hover p{
+    top:10px;
+}
+#left li .bottom{
+    width:10px;
+    height:2px;
+    background: #f5f5f5;
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    opacity:0;
+    transition: all 0.2s ease-in;
+}
+#left li:hover .bottom{
+    opacity:1;
+    width:180px;
+    bottom: 2px;
+    left: 60px;
+}
+#left .extend{
+    width:300px;
+    display: none;
+}
+#left .extend p{
+    height:40px;
+    width:300px;
+    font-size: 25px;
+    /*background: #f3f3f3;*/
+    opacity:0.5;
+    color: #f8f8f8;
+    text-align: center;
+    line-height:40px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#left .extend p:hover{
+    opacity:0.5;
+    font-size: 26px;
+    background: #f3f3f3;
+    color: #00b7ee;
+}
+#left .extend p span{
+    float: right;
+    margin-top:8px;
+    margin-right:25px;
+    transition: all 0.2s ease-in;
+}
+#left .extend p:hover span{
+    margin-right:20px;
+}
