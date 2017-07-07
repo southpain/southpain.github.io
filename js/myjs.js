@@ -101,14 +101,44 @@ for (var i = 0; i < lis.length; i++) {
     }
 }
 //================下拉框=================================
-$('#project').toggle(function (){
-    $('#choice').css('display','block');
-},function (){
-    $('#choice').css('display','none');
+//$('#project').toggle(function (){
+//    $('#choice').css('display','block');
+//},function (){
+//    $('#choice').css('display','none');
+//});
+//$('#choice').mouseleave(function(){
+//    $('#choice').css('display','none');
+//});
+
+//var a=1;
+//$('#project').click(function () {
+//    if(a==1){
+//        $('#choice').css('display','block');
+//        a=0;
+//    }else{
+//        $('#choice').css('display','none');
+//        a=1;
+//    }
+//});
+//$('#choice').mouseleave(function(){
+//    $('#choice').css('display','none');
+//    a=1;
+//});
+$('#project').click(function () {
+    if($('#choice').attr('showtime')=='ok'){
+        $('#choice').css('display','block');
+        $('#choice').attr('showtime',' ');
+    }else{
+        $('#choice').css('display','none');
+        $('#choice').attr('showtime','ok');
+    }
 });
 $('#choice').mouseleave(function(){
     $('#choice').css('display','none');
+    $('#choice').attr('showtime','ok');
 });
+
+
 
 //===========回到顶部========================
 $('#move_top').click(function(){
@@ -121,23 +151,22 @@ window.onscroll=function(){
     var t3=$('body').scrollTop();
     //alert('5');
     if(t3<200){
-        //$('#move_top').css('display','none');
         $('#move_top').fadeOut();
     }else{
         $('#move_top').fadeIn();
+
     }
 };
 
 //====================heart==============================
-var flag=true;
+//var flag=true;
     $('.m_con li').on('click','.bgcolor',function (){
-        //alert($(this).find('.fa-heart').css('color'));
-        if(flag==true){
+        if($(this).attr('show')=='ok'){
             $(this).find('.fa-heart').css('color','#c9302c');
-            flag=false;
-        }else {
+            $(this).attr('show','no');
+        }else{
             $(this).find('.fa-heart').css('color','#fff');
-            flag=true;
+            $(this).attr('show','ok');
         }
     });
 
