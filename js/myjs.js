@@ -169,4 +169,6 @@ window.onscroll=function(){
             $(this).attr('show','ok');
         }
     });
-
+//=======================分隔背景===========================
+$('.parallax-window').parallax({imageSrc: './images/picture_01.jpg'});
+$('.parallax-window2').parallax({imageSrc: './images/picture_02.jpg'});
