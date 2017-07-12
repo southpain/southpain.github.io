@@ -374,11 +374,23 @@ nav .nav:hover .befor,nav .nav:hover .after{
     margin-top:20px;
     font-size: 18px;
 }
+
 /*==========================Middle_End===========================*/
 /*==========================透明背景_Strat===========================*/
+/*==============个人介绍背景_Strat============*/
+#particles-js{
+    width: 100%;
+    height: 300px;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+/*==============个人介绍背景_End============*/
 .bg_con1{
     width:100%;
     height:300px;
+    margin-top:-300px;
 }
 .bg_ccon{
     width:1000px;
