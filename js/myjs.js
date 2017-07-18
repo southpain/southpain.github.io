@@ -1,6 +1,8 @@
 /**
  * Created by HH on 2017/7/4.
  */
+
+    //========================原生js大图滚动=====================
 var main=document.getElementById('main'),
     con=document.getElementById('con'),
     ps=con.getElementsByTagName('p'),
@@ -101,29 +103,6 @@ for (var i = 0; i < lis.length; i++) {
     }
 }
 //================下拉框=================================
-//$('#project').toggle(function (){
-//    $('#choice').css('display','block');
-//},function (){
-//    $('#choice').css('display','none');
-//});
-//$('#choice').mouseleave(function(){
-//    $('#choice').css('display','none');
-//});
-
-//var a=1;
-//$('#project').click(function () {
-//    if(a==1){
-//        $('#choice').css('display','block');
-//        a=0;
-//    }else{
-//        $('#choice').css('display','none');
-//        a=1;
-//    }
-//});
-//$('#choice').mouseleave(function(){
-//    $('#choice').css('display','none');
-//    a=1;
-//});
 $('#project').click(function () {
     if($('#choice').attr('showtime')=='ok'){
         $('#choice').css('display','block');
@@ -172,3 +151,22 @@ window.onscroll=function(){
 //=======================分隔背景===========================
 $('.parallax-window').parallax({imageSrc: './images/picture_01.jpg'});
 $('.parallax-window2').parallax({imageSrc: './images/picture_02.jpg'});
+//=========================淡入动画===========================
+//var wow = new WOW({
+//    boxClass: 'wow',
+//    animateClass: 'animated',
+//    offset: 0,
+//    mobile: true,
+//    live: true
+//});
+//wow.init();
+new WOW({ mobile: false }).init();
+
+//=====================获取屏幕高度============================
+
+var wh = $(window).height();
+//$('.wrap').css({'height':wh+'px','background-size':100% wh+'px'});
+$('.wrap').css(function(){
+    this.style.height=wh+'px';
+    this.style.backgroundSize=wh+'px';
+})
