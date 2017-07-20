@@ -317,21 +317,17 @@ nav .nav:hover .befor,nav .nav:hover .after{
 #middle .m_con{
     width:1000px;
     height:300px;
-    /*background: #5bc0de;*/
     margin:0 auto;
 }
 #middle .m_con li{
     width:300px;
     height:300px;
-    /*background: #c0a16b;*/
-    /*background: #5bc0de;*/
     float: left;
     margin-left:25px;
 }
 #middle .m_con li .icon{
     width:100px;
     height:100px;
-    /*background: #f8f8f8;*/
     float: left;
     margin-left:100px;
     margin-top:50px;
@@ -339,7 +335,6 @@ nav .nav:hover .befor,nav .nav:hover .after{
     cursor: pointer;
     transition: all 0.3s ease;
     border:2px solid #31b0d5;
-    /*text-align: center;*/
     line-height:100px;
 }
 #middle .m_con li:hover .icon{
@@ -474,6 +469,7 @@ nav .nav:hover .befor,nav .nav:hover .after{
     float: left;
     width:300px;
     height:200px;
+    margin-right:50px;
 }
 .swiper-slide p{
     float: right;

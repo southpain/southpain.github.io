@@ -166,7 +166,10 @@ new WOW({ mobile: false }).init();
 
 var wh = $(window).height();
 //$('.wrap').css({'height':wh+'px','background-size':100% wh+'px'});
-$('.wrap').css(function(){
-    this.style.height=wh+'px';
-    this.style.backgroundSize=wh+'px';
-})
+console.log(wh);
+//$('.wrap').css("height",wh+"px");
+//$('.wrap').css("backgroundSize",100% wh+"px");
+//    $(this).css("height","wh");
+//    //this.style.height=wh+'px';
+//    //this.style.backgroundSize=wh+'px';
+//})
