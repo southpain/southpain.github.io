@@ -151,7 +151,7 @@ window.onscroll=function(){
 //=======================分隔背景===========================
 $('.parallax-window').parallax({imageSrc: './images/picture_01.jpg'});
 $('.parallax-window2').parallax({imageSrc: './images/picture_02.jpg'});
-//=========================淡入动画===========================
+//=========================淡入动画WOW===========================
 //var wow = new WOW({
 //    boxClass: 'wow',
 //    animateClass: 'animated',
@@ -165,11 +165,4 @@ new WOW({ mobile: false }).init();
 //=====================获取屏幕高度============================
 
 var wh = $(window).height();
-//$('.wrap').css({'height':wh+'px','background-size':100% wh+'px'});
 console.log(wh);
-//$('.wrap').css("height",wh+"px");
-//$('.wrap').css("backgroundSize",100% wh+"px");
-//    $(this).css("height","wh");
-//    //this.style.height=wh+'px';
-//    //this.style.backgroundSize=wh+'px';
-//})
