@@ -1,209 +1,448 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>SouthPain</title>
-    <link rel="stylesheet" href="./css/mystyle.css">
-    <link href="./css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/animate.min.css">
+<title> SouthPain | Home </title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="./js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+    <script type="text/javascript" src="./js/move-top.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
 </head>
 <body>
-    <div class="wrap_top"></div>
-    <div class="wrap">
-        <div class="w_top">
-            <div class="top_con">
-                <p>
-                    <i class="fa fa-envelope fa-lg"></i>
-                    Southpain@gmail.com
-                </p>
-                <p>
-                    <i class="fa fa-phone fa-lg"></i>
-                    135-2277-2135
-                </p>
-            </div>
-        </div>
-        <div class="w_bottom">
-            <nav>
-                <h2><img src="./images/southpain.png" alt=""></h2>
-                <div class="nav">
-                    <div class="after"></div>
-                    <a href="javascript:"><p>CONTATC</p></a>
-                    <div class="befor"></div>
-                </div>
-                <div class="nav">
-                    <div class="after"></div>
-                    <a href="javascript:">
-                        <p id="project">
-                            PROJECT
-                            <span class="carat"></span>
-                            <ul id="choice" showtime="ok">
-                                <a href="./小象知识产权服务/html/index/lndex.html"><li>项目一</li></a>
-                                <a href="./叽喳校园/w/inde.html"><li>项目二</li></a>
-                            </ul>
-                        </p>
-                    </a>
-                    <div class="befor"></div>
-                </div>
-                <div class="nav">
-                    <div class="after"></div>
-                    <a href="./Self-introduction.html"><p>ABOUT</p></a>
-                    <div class="befor"></div>
-                </div>
-                <div class="nav">
-                    <div class="after"></div>
-                    <a href="javascript:"><p>HOME</p></a>
-                    <div class="befor"></div>
-                </div>
-                <!--<ul id="choice">-->
-                    <!--<a href="javascript:"><li>项目一</li></a>-->
-                    <!--<a href="javascript:"><li>项目二</li></a>-->
-                <!--</ul>-->
-            </nav>
-            <div id="wrap2">
-                <div id="main">
-                    <div id="con">
-                        <p>
-                            <span>If you don't travel around, you'd think this is the world.</span>
-                            <span>如果你不走出去，你就会认为这就是世界。</span>
-                        </p>
-                        <p>
-                            <span>Life doesn't get easier, you just get stronger.</span>
-                            <span>生活从未变得轻松，是你在一点一点变得坚强。</span>
-                        </p>
-                        <p>
-                            <span>Discontent is the first step in progress.</span>
-                            <span>不知足是前进中的第一步。</span>
-                        </p>
-                        <p>
-                            <span>Everyone is dissatisfied with his own fortune. </span>
-                            <span>人对自己的命运总不感满足。</span>
-                        </p>
-                        <p>
-                            <span>Absence sharpens love, presence strengthens it.</span>
-                            <span>相聚爱益切，离别情更深。</span>
-                        </p>
-                    </div>
-                </div>
-                <div id="fenge"></div>
-                <ul id="num">
-                    <li class="show">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+ <!-- header-section-starts -->
+    <div class="header">
+		<div class="header-banner">
+			<div class="container">
+				<div class="top-menu">
+				    <span class="menu"> </span>
+					    <ul>
+							<li><a href="#ABOUT" class="scroll">ABOUT</a></li>
+							<li><a href="#WORK" class="scroll">WORK</a></li>
+							<li><a href="#CONTACT" class="scroll">CONTACT</a></li>
+							<div class="clearfix"></div>
+						</ul>
+				    </div>
+		 <!--script-nav-->
+		 <script>
+		 $("span.menu").click(function(){
+		 $(".top-menu ul").slideToggle("slow" , function(){
+		 });
+		 });
+		 </script>
+				<div class="header-banner-info text-center">
+					<a href="#"><img src="./images/southpain.png" alt="" /></a>
+					<h3>HELLO</h3>
+					<h1>my name is <span>HuangHao,</span> </h1>
+					<p>I'm a Java engineer. </p>
+					<span class="line"></span>					 
+					<ul class="social-icons">
+						<li><a href="javascript:"><i class="twitter">南</i></a></li>
+						<li><a href="javascript:"><i class="dribble">飞</i></a></li>
+						<li><a href="javascript:"><i class="behance">雁</i></a></li>
+					</ul>
+					<label></label>
+					<ul class="details">
+						<li>Age     :     <a href="javascript:">23</a></li>
+						<li>Country     :     <a href="javascript:">BeiJing</a></li>
+						<li>Working at     :     <a href="javascript:">FREELANCE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- header-section-ends -->
+    <!-- content-section-starts -->
+    <div class="content-section">
+	    <!-- about-section-starts -->
+		<div class="about-section" id="ABOUT">
+			<div class="container">
+				<div class="about-section-head text-center">
+					<img src="./images/head.png" alt="" />
+					<h3>ABOUT</h3>
+					<label></label>
+					<p>It's Me.</p>
+				</div>
+				<div class="about-section-grids">
+					<div class="col-md-4 about-section-grid-1">
+						<h4>Who am I?</h4>
+						<p>我叫黄豪，我是一名JAVA开发工程师，从事于JAVA后台开发已经有2年的时间，有过OA管理系统及交友网站的后台代码经验.</p>
+						<p>一次偶然的机会使我接触到编程，也使我对编程产生了浓厚的兴趣,从此展开了我的程序员的路程</p>
+						<p>我曾在成都的一家软件开发公司工作实习，工作了大约有2年的时间，我也积累了很多的开发知识，我也很喜欢研究新的开发框架，我认为学习的更多才能使我拥有更大的竞争力，为了拓宽我知识的视野我选择到北京来求职，并且学习更多的知识</p>
+						<ul class="social-icons">
+						    <li><a href="#"><i class="twitter"></i></a></li>
+						    <li><a href="#"><i class="dribble"></i></a></li>
+						    <li><a href="#"><i class="behance"></i></a></li>
+					    </ul>
+					</div>
+					<div class="col-md-4 about-section-grid-2 text-center">
+						<img src="./images/man.jpg" class="img-responsive" alt="" /> 
+					</div>
+					<div class="col-md-4 about-section-grid-3">
+						<h4>我的技能</h4>
+						<div class="progress-grid">
+				  	       <div class="meter red">
+							   <span style="width:60%;">
+							  	<div class="progress_desc">Eclipse</div>
+								<div class="percent">60%</div> 
+						        <div class="clearfix"> </div>
+						       </span>
+							</div>
+							<div class="meter animate">
+							   <span style="width:65%;"><div class="progress_desc">SSM框架</div>
+								<div class="percent">65%</div> 
+						        <div class="clearfix"> </div>
+							   </span>
+							</div>
+							<div class="meter">
+								<span style="width:60%;"><div class="progress_desc">MySql</div>
+								 <div class="percent">60%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+						</div>
+						<div class="progress-grid">
+				  	       <div class="meter red">
+							   <span style="width:50%;">
+							  	<div class="progress_desc">MongoDB</div>
+								<div class="percent">50%</div> 
+						        <div class="clearfix"> </div>
+						       </span>
+							</div>
+							<div class="meter animate">
+							   <span style="width:50%;"><div class="progress_desc">SpringBoot</div>
+								<div class="percent">50%</div> 
+						        <div class="clearfix"> </div>
+							   </span>
+							</div>
+							<div class="meter">
+								<span style="width:60%;"><div class="progress_desc">Velocity</div>
+								 <div class="percent">60%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+						</div>
+					  </div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<!-- about-section-ends -->
+		<!-- portfolio-section-starts -->
+		<div class="portfolio-section" id="WORK">
+			<div class="portfolio-section-top-row">
+				<div class="container">
+					<div class="portfolio-section-head text-center">
+						<h3>项目经验</h3>
+						<label></label>
+						<p>举例介绍</p>
+					</div>
+					<div class="col-md-4 portfolio-section-top-row-left-grid">
+						<div class="project-name">
+							<span>项目名称</span>
+							<h3><乐在其中></h3>
+						</div>
+						<div class="project-description">
+							 <span>项目负责模块</span>
+							 <ul>
+								<li><a href="javascript:">商品列表</a></li>
+								<li><a href="javascript:">商品兑换</a></li>
+								<li><a href="javascript:">收货地址</a></li>
+							 </ul>
+							 <p>该项目是个基于移动端的聊天交友的网站，通过定位获取当前位置，获取到当前位置的所有活动信息，该网站分为主要几个大模块主要功能为拼活动，聊天交友，积分商城，抢红包，分享心得等主要内容，用户群体分为一般用户和商家，用户可以通过拼活动，聊天交友等模板进行交友互动，商家可通过积分商城提供商品以及抢红包模板发布红包及商家的活动。</p>
+						</div>
+						<div class="address">
+							<span>软件架构</span>
+							<a href="javascript:">SpringMVC+Spring+MyBatis、Velocity、HTML5+CSS/DIV、AJAX、jQuery、MUI、UUID加密</a>
+						</div>
+						<div class="tags">
+							<span>部署环境</span>
+							<p>Linux、Nginx、Tomcat7、JDK1.8、MongoDB、Mysql、Junit</p>
+							<span>开发环境</span>
+							<p>Eclipse+Maven+Git</p>
+						</div>
+					</div>
+					<div class="col-md-8 portfolio-section-top-row-right-grid">
+		<div class="wmuSlider example1 section" id="section-1">
+			   <article style="position: absolute; width: 100%; opacity: 0;"> 
+					<img src="./images/img6.png" class="img-responsive" alt="">
+				</article>
+				<article style="position: absolute; width: 100%; opacity: 0;"> 
+`					<img src="./images/img5.png" class="img-responsive" alt="">
+				</article>
+				<article style="position: absolute; width: 100%; opacity: 0;"> 
+					<img src="./images/img7.png" class="img-responsive" alt="">
+				</article>
+				<ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="">2</a></li>
                 </ul>
-                <p id="left">&lt;</p>
-                <p id="right">&gt;</p>
-            </div>
-        </div>
-    </div>
-    <div id="middle">
-        <div class="m_wcome">
-            <p>WELCOME</p>
-            <span>欢迎！</span>
-        </div>
-        <ul class="m_con">
-            <li class="wow fadeInUp" data-wow-delay="0.4s" >
-                <div class="icon">
-                    <p>南</p>
-                    <div class="bgcolor" show="ok">
-                        <i class="fa fa-heart fa-4x" ></i>
-                    </div>
-                </div>
-                <p class="c_text">Curabitur convallis rutrum erat nec vestibulum. Sed iaculis hendrerit lectus sit amet lobortis vulputate magna finibus molestie tellus.</p>
-            </li>
-            <li class="wow fadeInUp" data-wow-delay="0.4s">
-                <div class="icon">
-                    <p>飞</p>
-                    <div class="bgcolor"show="ok">
-                        <i class="fa fa-heart fa-4x" ></i>
-                    </div>
-                </div>
-                <p class="c_text">Curabitur convallis rutrum erat nec vestibulum. Sed iaculis hendrerit lectus sit amet lobortis vulputate magna finibus molestie tellus.</p>
-            </li>
-            <li class="wow fadeInUp" data-wow-delay="0.4s" >
-                <div class="icon">
-                    <p>雁</p>
-                    <div class="bgcolor"show="ok">
-                        <i class="fa fa-heart fa-4x" ></i>
-                    </div>
-                </div>
-                <p class="c_text">Curabitur convallis rutrum erat nec vestibulum. Sed iaculis hendrerit lectus sit amet lobortis vulputate magna finibus molestie tellus.</p>
-            </li>
-        </ul>
-    </div>
-    <div id="particles-js">
-    </div>
-    <div class="bg_con1">
-        <div class="bg_ccon">
-            <p class="wow fadeInRight" data-wow-delay="0.4s">This Me!</p>
-            <img src="./images/my.jpg" alt="" class="wow fadeInLeft" data-wow-delay="0.4s">
-            <p class="wow fadeInRight" data-wow-delay="0.4s">自我介绍</p>
-        </div>
-    </div>
-    <!--========================只是隔板而已====================-->
-    <div class="bg_geban"></div>
-    <!--========================只是隔板而已====================-->
-    <div id="separate_bg">
-        <div class="parallax-window" data-bleed="0" data-parallax="scroll" data-image-src="../images/picture_01.jpg" data-naturalWidth="1366" data-naturalHeight="768">
-            <div class="bg_con2_tit">
-                <p>PROJECT</p>
-            </div>
-            <div class="bg_con2">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./images/1.jpg" alt="">
-                            <p>介绍</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/2.jpg" alt="">
-                            <p>介绍</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/3.jpg" alt="">
-                            <p>介绍</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/4.jpg" alt="">
-                            <p>介绍</p>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-        <div class="bg_con3">
-            con3
-        </div>
-    </div>
-    <div id="bottom">
-        bottom_con
-    </div>
-    <div id="move_top"></div>
 
+		  </div>
+			  
+			  <!-- script -->
+			  <script src="./js/jquery.wmuSlider.js"></script> 
+				<script>
+					$('.example1').wmuSlider();         
+				</script>
+				<!-- script -->	
 
+			     </div>
+			    <div class="clearfix"></div>
+			  </div>
+			</div>
+			<div class="portfolio-section-bottom-row" id="portfolio">
+			<div class="container">
+		 <ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon web logo1">All</span></li>
+						<li><span class="filter" data-filter="app">Web Design</span></li>
+						<li><span class="filter" data-filter="card">Coding</span></li>
+						<li><span class="filter" data-filter="icon">Photography</span></li>
+						<li><span class="filter" data-filter="logo1">Freebies</span></li>
+						</ul>
+					<div id="portfoliolist">
+					<div class="portfolio card mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/pic-1.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">iOS 7 Weather App Design<img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/pic-2.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">iOS 7 Weather App Design<img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio icon mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/pic-4.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">iOS 7 Weather App Design<img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
 
+					</div>
+					<div class="portfolio logo1 mix_all  wow bounceIn" data-wow-delay="0.4s" data-cat="logo1" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog7" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/pic-8.jpg" class="img-responsive" alt="" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 ">iOS 7 Weather App Design<img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>	
 
+<div class="clearfix"></div>					
+				</div>
+		  <div class="clearfix"></div>
+		  
+		  <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+		  <!-- Script for gallery Here -->
+				<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			<!-- pop-up-box -->
+					  <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!-- //pop-up-box -->
+			<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/pic1.jpg" class="img-responsive" alt="" />
+							<p>。。。 </p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/pic2.jpg" class="img-responsive" alt="" />
+							<p>。。。</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/pic3.jpg" class="img-responsive" alt="" />
+							<p>。。。</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/pic4.jpg" class="img-responsive" alt="" />
+							<p>。。。</p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/pic5.jpg" class="img-responsive" alt="" />
+							<p>。。。 </p>
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>
+		</div>
+	  </div>
+	</div>
+	<!-- portfolio-section-ends -->
+	<div class="twitter-section">
+	    <div class="course_demo">
+		          <ul id="flexiselDemo3">	
+					<li>
+						<a href="javascript:"><i class="tw"></i></a>
+						<p>"Design is hard work. Striving for design excellence is even harder." ARCHIE BOSTON</p>
+						<a href="javascript:">@emrahdemirag</a>
+					</li>									    	  	       	   	  									    	  	       	   	    	
+				</ul>
 
-    <!--=========================js文件===============================-->
-    <script src="./js/jquery-1.8.3.min.js"></script>
-    <script src="./js/parallax.min.js"></script>
-    <script src="./js/particles.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/wow-1.3.0.min.js"></script>
-    <script src="./js/swiper.min.js"></script>
-    <script src="./js/myjs.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            direction: 'vertical',
-            slidesPerView: 1,
-            paginationClickable: true,
-            spaceBetween: 30,
-            mousewheelControl: true
-        });
-    </script>
+	  </div>
+	  </div>
+					<script type="text/javascript">
+			$(window).load(function() {
+				$("#flexiselDemo3").flexisel({
+					visibleItems: 1,
+					animationSpeed: 1000,
+					autoPlay: false,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+			    	responsiveBreakpoints: { 
+			    		portrait: { 
+			    			changePoint:480,
+			    			visibleItems: 1
+			    		}, 
+			    		landscape: { 
+			    			changePoint:640,
+			    			visibleItems: 1
+			    		},
+			    		tablet: { 
+			    			changePoint:768,
+			    			visibleItems: 1
+			    		}
+			    	}
+			    });
+			    
+			});
+		</script>
+		<script type="text/javascript" src="./js/jquery.flexisel.js"></script>	
+
+	<!-- content-section-starts -->
+	<div class="contact-section text-center" id="CONTACT">
+		<div class="container">
+			<div class="contact-section-head">
+				<h3>contact</h3>
+				<label></label>
+				<p>Recent blog writings</p>
+			</div>
+			<div class="contact-info">
+				<ul>
+					<li><i class="message"></i></li>
+					<li><a href="#">southpain@163.com</a></li>
+					<li><i class="phone"></i></li>
+					<li>135-2277-2135</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+    </div>
+    <!-- content-section-ends -->
+	<!-- footer-section-starts -->
+	<div class="footer">
+	    <div class="container">
+			
+		</div>
+	</div>
+	<!-- footer-section-ends -->
+				  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
 </body>
 </html>
