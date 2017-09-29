@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--配置SayHelloService服务的消费者-->
+<bean id="SayHelloServiceConsumer" class="com.taobao.hsf.app.spring.util.HSFSpringConsumerBean" init-method="init">
+    <!--服务的接口名和版本号须与服务提供者定义的一致-->
+    <property name="interfaceName">
+        <value>com.hsf.services.SayHelloService</value>
+    </property>
+    <property name="version">
+        <value>1.0.0.0.dev</value>
+    </property>
+</bean>
